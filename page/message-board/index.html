@@ -1,7 +1,65 @@
-<!doctype html><html lang="en"><head><!-- hexo injector head_begin start --><meta name="description" content="一枚热爱计算机的博主"></meta><meta name="keywords" content="computer"></meta><meta name="author" content="Aurorp1g"></meta><!-- hexo injector head_begin end --><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="/favicon.ico"><script type="module" crossorigin src="/static/js/120aa8f8.js"></script><link rel="stylesheet" href="/static/css/a14e1a22.css"><!-- hexo injector head_end start --><script rel="prefetch" async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script rel="preload" src="https://unpkg.com/blueimp-md5@^2.19.0/js/md5.min.js"></script><script rel="preload" src="https://unpkg.com/lodash@^4.17.21/lodash.min.js"></script><link rel="stylesheet" href="https://fonts.loli.net/css?family=Rubik" /><script rel="preload" src="https://unpkg.com/gitalk@^1.8.0/dist/gitalk.min.js"></script><link rel="stylesheet" href="https://unpkg.com/gitalk@^1.8.0/dist/gitalk.css"/><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body id="body-container"><noscript><strong>We're sorry but this app doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div></body></html>
-<!-- 雪花特效 -->
-<script type="text/javascript" 
-src="https://libs.baidu.com/jquery/1.8.3/jquery.js"></script>
-<script type="text/javascript" 
-src="https://libs.baidu.com/jquery/1.8.3/jquery.min.js"></script>
-<script type="text/javascript" src="/js/snow.js"></script>
+<!doctype html>
+<html lang="en">
+    <head><!-- hexo injector head_begin start --><meta name="description" content="一枚热爱计算机的博主"></meta><meta name="keywords" content="computer"></meta><meta name="author" content="Aurorp1g"></meta><!-- hexo injector head_begin end -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="icon" href="/favicon.ico">
+        <script type="module" crossorigin src="/static/js/120aa8f8.js"></script>
+        <link rel="stylesheet" href="/static/css/a14e1a22.css">
+        <!-- 新增开场动画样式 -->
+        <style>
+            #intro-animation {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                z-index: 100002;
+                background: #000;
+                transition: opacity 1s ease;
+            }
+            .fade-out {
+                opacity: 0;
+                pointer-events: none;
+            }
+        </style>
+    <!-- hexo injector head_end start --><script rel="prefetch" async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script rel="preload" src="https://unpkg.com/blueimp-md5@^2.19.0/js/md5.min.js"></script><script rel="preload" src="https://unpkg.com/lodash@^4.17.21/lodash.min.js"></script><link rel="stylesheet" href="https://fonts.loli.net/css?family=Rubik" /><script rel="preload" src="https://unpkg.com/gitalk@^1.8.0/dist/gitalk.min.js"></script><link rel="stylesheet" href="https://unpkg.com/gitalk@^1.8.0/dist/gitalk.css"/><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head>
+
+    <body id="body-container">
+        <!-- 开场动画容器 -->
+        <canvas id="intro-animation"></canvas>
+        <!-- 网页内容 -->
+        <noscript>
+            <strong>
+                We're sorry but this app doesn't work properly without JavaScript enabled. Please enable it to continue.
+            </strong>
+        </noscript>
+        <div id="app"></div>
+        
+        <!-- 音乐播放器 -->
+        <link rel="stylesheet" href="/static/css/APlayer.min.css"><!--APlayer的样式-->
+        <script src="/static/js/APlayer.min.js"></script><!--APlayer的依赖-->
+        <div id="aplayer"></div>
+        <script src="/static/js/aplayer.js"></script><!-- 播放器 -->
+
+        <!-- 雪花特效 -->
+        <script type="text/javascript" 
+            src="/static/js/jquery.js"></script>
+        <script type="text/javascript" 
+            src="/static/js/jquery.min.js"></script>
+        <script src="/static/js/snowy.js"></script>
+        <script src="/static/js/Snow.js"></script>
+        <style type="text/css">
+            .snow-container{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:100001;}
+        </style>
+        <div class="snow-container"></div>
+        
+        <!-- 鼠标特效 -->
+        <script src="/static/js/Morse.js"></script>
+
+        <!-- 开场黑客代码矩阵雨动画 -->
+        <script src="/static/js/cartoon.js"></script>
+
+    </body>
+</html>
