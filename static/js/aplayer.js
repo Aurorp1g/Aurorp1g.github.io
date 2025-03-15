@@ -9,9 +9,10 @@ new APlayer({
     audio: [
       {
         name: '降临',
-      artist: 'ABreen',
+      artist: 'Breen',
       url: '/music/mp3/降临.mp3',
       cover: '/music/cover/降临.jpg',
+      lrc: '/music/lrc/降临.lrc',
       theme: '#1F1F1F'
       },
       {
@@ -27,6 +28,7 @@ new APlayer({
         artist: '梨冻紧&张子豪',
         url: '/music/mp3/Follow(罗生门).mp3',
         cover: '/music/cover/Follow(罗生门).jpg',
+        lrc: '/music/lrc/Follow(罗生门).lrc',
         theme: '#1F1F1F'
       },
       {
@@ -34,6 +36,7 @@ new APlayer({
         artist: 'Tess Ortega',
         url: '/music/mp3/love_with_U.mp3',
         cover: '/music/cover/love_with_U.jpg',
+        lrc: '/music/lrc/love_with_U.lrc',
         theme: '#1F1F1F'
       },
       {
