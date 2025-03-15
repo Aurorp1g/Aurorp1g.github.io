@@ -49,14 +49,14 @@ function draw() {
 // 设置动画帧率
 setInterval(draw, 33);
 
-// 18秒后淡出
+// 10秒后淡出
 setTimeout(() => {
   canvas.style.opacity = '0';
   // 3秒后移除元素
   setTimeout(() => {
     canvas.remove();
   }, 3000);
-}, 18000);
+}, 10000);
 
 // 窗口大小调整处理
 window.addEventListener('resize', () => {
