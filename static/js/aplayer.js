@@ -1,7 +1,7 @@
 new APlayer({
     container: document.getElementById('aplayer'),
     fixed: true,
-    autoplay: true,
+    autoplay: false,
     theme: '#1F1F1F',
     listFolded: true,
     listMaxHeight: 90,
