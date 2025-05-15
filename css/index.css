@@ -6482,7 +6482,7 @@ blockquote.pullquote.right {
 
 @font-face {
   font-family: LXGW;
-  src: url(https://data-static.netdun.net/Fomalhaut/fonts/霞鹜文楷.woff2);
+  src: url(../woff/xwwk.woff2);
   font-display: swap;
 }
 
@@ -8521,7 +8521,7 @@ li.categoryBar-list-item {
   }
 }
 
-/* By Fomalhaut版权大小 */
+/* By Aurorp1g 版权大小 */
 .copyright {
   font-size: 16px;
 }
@@ -8677,16 +8677,18 @@ span.card-clock-weather {
 }
 
 .btn-xz {
-  display: block;
-  background-color: var(--btn-bg);
-  color: var(--btn-color);
-  text-align: center;
-  line-height: 2.4;
-  margin: 8px 0;
+  background-color: var(--theme-color) !important; /* 使用主题色 */
+  color: white !important;
+  border-radius: 8px;
+  padding: 8px 20px;
+  transition: all 0.3s ease-in-out;
+  border: none;
 }
 
 .btn-xz:hover {
-  text-decoration: none !important;
+  background-color: #ff5722 !important; /* 悬停颜色 */
+  transform: scale(1.05);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.2);
 }
 
 .btn-xz-box:hover .btn-xz {
@@ -9109,7 +9111,15 @@ figure.highlight pre .deletion {
 [data-theme="light"] #post-info {
   animation: none !important;
 }
-
+/* dark模式不启用霓虹灯 
+[data-theme="dark"] #site-name, 
+[data-theme="dark"] #site-title,
+[data-theme="dark"] #site-subtitle,
+[data-theme="dark"] #post-info {
+  animation: none !important;
+}
+*/
+/* 原始参数
 @keyframes light_15px {
   0% {
     text-shadow: #5636ed 0 0 15px;
@@ -9142,70 +9152,95 @@ figure.highlight pre .deletion {
     text-shadow: #5636ed 0 0 15px;
   }
 }
+*/
+
+@keyframes light_15px {
+  0% {
+    text-shadow: #4b6f9e 0 0 15px; /* 深邃的夜空蓝 */
+  }
+  12.5% {
+    text-shadow: #6b7f9f 0 0 15px; /* 星空般的淡蓝色 */
+  }
+  25% {
+    text-shadow: #8b8fa0 0 0 15px; /* 深夜的淡紫色 */
+  }
+  37.5% {
+    text-shadow: #a99fa1 0 0 15px; /* 淡灰，增添宁静感 */
+  }
+  50% {
+    text-shadow: #c7b0a2 0 0 15px; /* 深夜的淡褐色，温暖感 */
+  }
+  62.5% {
+    text-shadow: #e5c1a3 0 0 15px; /* 淡黄褐色，柔和的月光感 */
+  }
+  75% {
+    text-shadow: #fde8d4 0 0 15px; /* 淡米色，增添温馨感 */
+  }
+  87.5% {
+    text-shadow: #dfe8f3 0 0 15px; /* 淡蓝色，回归宁静 */
+  }
+  100% {
+    text-shadow: #4b6f9e 0 0 15px; /* 回到深邃的夜空蓝 */
+  }
+}
 
 @keyframes light_10px {
   0% {
-    text-shadow: #5636ed 0 0 10px;
+    text-shadow: #4b6f9e 0 0 15px; /* 深邃的夜空蓝 */
   }
   12.5% {
-    text-shadow: #11ee5e 0 0 10px;
+    text-shadow: #6b7f9f 0 0 15px; /* 星空般的淡蓝色 */
   }
   25% {
-    text-shadow: #f14747 0 0 10px;
+    text-shadow: #8b8fa0 0 0 15px; /* 深夜的淡紫色 */
   }
   37.5% {
-    text-shadow: #f1a247 0 0 10px;
+    text-shadow: #a99fa1 0 0 15px; /* 淡灰，增添宁静感 */
   }
   50% {
-    text-shadow: #f1ee47 0 0 10px;
-  }
-  50% {
-    text-shadow: #b347f1 0 0 10px;
+    text-shadow: #c7b0a2 0 0 15px; /* 深夜的淡褐色，温暖感 */
   }
   62.5% {
-    text-shadow: #002afa 0 0 10px;
+    text-shadow: #e5c1a3 0 0 15px; /* 淡黄褐色，柔和的月光感 */
   }
   75% {
-    text-shadow: #ed709b 0 0 10px;
+    text-shadow: #fde8d4 0 0 15px; /* 淡米色，增添温馨感 */
   }
   87.5% {
-    text-shadow: #39c5bb 0 0 10px;
+    text-shadow: #dfe8f3 0 0 15px; /* 淡蓝色，回归宁静 */
   }
   100% {
-    text-shadow: #5636ed 0 0 10px;
+    text-shadow: #4b6f9e 0 0 15px; /* 回到深邃的夜空蓝 */
   }
 }
 
 @keyframes light_5px {
   0% {
-    text-shadow: #5636ed 0 0 5px;
+    text-shadow: #4b6f9e 0 0 15px; /* 深邃的夜空蓝 */
   }
   12.5% {
-    text-shadow: #11ee5e 0 0 5px;
+    text-shadow: #6b7f9f 0 0 15px; /* 星空般的淡蓝色 */
   }
   25% {
-    text-shadow: #f14747 0 0 5px;
+    text-shadow: #8b8fa0 0 0 15px; /* 深夜的淡紫色 */
   }
   37.5% {
-    text-shadow: #f1a247 0 0 15px;
+    text-shadow: #a99fa1 0 0 15px; /* 淡灰，增添宁静感 */
   }
   50% {
-    text-shadow: #f1ee47 0 0 5px;
-  }
-  50% {
-    text-shadow: #b347f1 0 0 5px;
+    text-shadow: #c7b0a2 0 0 15px; /* 深夜的淡褐色，温暖感 */
   }
   62.5% {
-    text-shadow: #002afa 0 0 5px;
+    text-shadow: #e5c1a3 0 0 15px; /* 淡黄褐色，柔和的月光感 */
   }
   75% {
-    text-shadow: #ed709b 0 0 5px;
+    text-shadow: #fde8d4 0 0 15px; /* 淡米色，增添温馨感 */
   }
   87.5% {
-    text-shadow: #39c5bb 0 0 5px;
+    text-shadow: #dfe8f3 0 0 15px; /* 淡蓝色，回归宁静 */
   }
   100% {
-    text-shadow: #5636ed 0 0 5px;
+    text-shadow: #4b6f9e 0 0 15px; /* 回到深邃的夜空蓝 */
   }
 }
 
@@ -9214,7 +9249,7 @@ figure.highlight pre .deletion {
   text-shadow: none !important;
 }
 [data-theme="dark"] .menu_word {
-  text-shadow: var(--menu-shadow);
+  text-shadow: none !important; /*var(--menu-shadow); 导航栏字体颜色设置*/
 }
 
 /* 评论按钮 */
