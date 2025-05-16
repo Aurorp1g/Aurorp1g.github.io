@@ -8,6 +8,14 @@ new APlayer({
     lrcType: 3,
     audio: [
       {
+        name: 'Follow(罗生门)',
+        artist: '梨冻紧&张子豪',
+        url: '/music/mp3/Follow(罗生门).mp3',
+        cover: '/music/cover/Follow(罗生门).jpg',
+        lrc: '/music/lrc/Follow(罗生门).lrc',
+        theme: '#1F1F1F'
+      },
+      {
         name: '降临',
       artist: 'Breen',
       url: '/music/mp3/降临.mp3',
@@ -21,14 +29,6 @@ new APlayer({
         url: '/music/mp3/off_the_hook.mp3',
         cover: '/music/cover/off_the_hook.jpg',
         lrc: '/music/lrc/off_the_hook.lrc',
-        theme: '#1F1F1F'
-      },
-      {
-        name: 'Follow(罗生门)',
-        artist: '梨冻紧&张子豪',
-        url: '/music/mp3/Follow(罗生门).mp3',
-        cover: '/music/cover/Follow(罗生门).jpg',
-        lrc: '/music/lrc/Follow(罗生门).lrc',
         theme: '#1F1F1F'
       },
       {
