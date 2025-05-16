@@ -6,7 +6,7 @@
   <link href="https://aurorp1g.github.io/atom.xml" rel="self"/>
   
   <link href="https://aurorp1g.github.io/"/>
-  <updated>2025-05-15T12:59:50.014Z</updated>
+  <updated>2025-05-16T11:42:27.293Z</updated>
   <id>https://aurorp1g.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://aurorp1g.github.io/posts/45a2885f.html"/>
     <id>https://aurorp1g.github.io/posts/45a2885f.html</id>
     <published>2025-05-15T12:17:01.000Z</published>
-    <updated>2025-05-15T12:59:50.014Z</updated>
+    <updated>2025-05-16T11:42:27.293Z</updated>
     
-    <content type="html"><![CDATA[<h1>博客大更新</h1><p>在数字世界的浪潮中，我的博客也迎来了它的蜕变之旅。它不仅仅是代码的重构，更是我对分享和交流的全新探索。</p><h2 id="一、更新的初衷">一、更新的初衷</h2><p>原先的博客存在着许多问题，例如：</p><ul><li>博客主题单调，只有色彩主题。</li><li>博文的内容显示不够美观。</li><li>阅读体验不佳。</li></ul><h2 id="二、更新的内容">二、更新的内容</h2><p>原先的博客使用了hexo的aurora主题，主题的色彩单调，而且博文的内容显示不够美观。</p><p><img src="/img/upday/140511.png" alt="原先的博客页面"></p><p><img src="/img/upday/203339.png" alt="原先的博客博文"></p><p>现在的博客使用了hexo的butterfly主题，主题的色彩更加丰富的，并且博文内容显示更加美观。同时仿照了其他博主的设计，结合自己的喜好，进行了修改。</p><p><img src="/img/upday/203233.png" alt="现在的博客页面"></p><p><img src="/img/upday/203303.png" alt="现在的博客界面"></p><p><img src="/img/upday/203216.png" alt="现在的博客博文"></p><h2 id="三、更新的收获">三、更新的收获</h2><p>通过这次的更新，我对博客的主题进行了修改，使得博客的内容更加美观，同时也提高了前端开发的能力。</p>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>博客网站初上线时间：2025-03-01<br>博客网站大更新时间：2025-05-16</p></blockquote><h1 id="博客大更新"><a href="#博客大更新" class="headerlink" title="博客大更新"></a>博客大更新</h1><p>在数字世界的浪潮中，我的博客也迎来了它的蜕变之旅。它不仅仅是代码的重构，更是我对分享和交流的全新探索。</p><h2 id="一、更新的初衷"><a href="#一、更新的初衷" class="headerlink" title="一、更新的初衷"></a>一、更新的初衷</h2><p>原先的博客存在着许多问题，例如：</p><ul><li>博客主题单调，只有色彩主题。</li><li>博文的内容显示不够美观。</li><li>阅读体验不佳。</li></ul><h2 id="二、更新的内容"><a href="#二、更新的内容" class="headerlink" title="二、更新的内容"></a>二、更新的内容</h2><p>原先的博客使用了hexo的aurora主题，主题的色彩单调，而且博文的内容显示不够美观。</p><p><img src="/img/upday/140511.png" alt="原先的博客页面"></p><p><img src="/img/upday/203339.png" alt="原先的博客博文"></p><p>现在的博客使用了hexo的butterfly主题，主题的色彩更加丰富的，并且博文内容显示更加美观。同时仿照了其他博主的设计，结合自己的喜好，进行了修改。</p><p><img src="/img/upday/203233.png" alt="现在的博客页面"></p><p><img src="/img/upday/203303.png" alt="现在的博客界面"></p><p><img src="/img/upday/203216.png" alt="现在的博客博文"></p><h2 id="三、更新的收获"><a href="#三、更新的收获" class="headerlink" title="三、更新的收获"></a>三、更新的收获</h2><p>通过这次的更新，我对博客的主题进行了修改，使得博客的内容更加美观，同时也提高了前端开发的能力。</p>]]></content>
     
     
     <summary type="html">🍃对我的网站进行回炉重造！！！</summary>
