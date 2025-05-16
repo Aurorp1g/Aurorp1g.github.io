@@ -521,6 +521,15 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00ffffff", endColorstr="#ccffffff", GradientType=0)
 }
 
+/* 修改歌词字重 */
+.aplayer-lrc p {
+    font-weight: 300 !important; /* medium 字重 */
+}
+
+.aplayer-lrc p.aplayer-lrc-current {
+    font-weight: 500 !important; /* bold 字重 */
+}
+
 .aplayer .aplayer-lrc p {
     font-size: 15px;
     color: #666;
@@ -727,3 +736,20 @@
 }
 
 /*# sourceMappingURL=APlayer.min.css.map*/
+
+/*字体设置*/
+@font-face {
+  font-family: 'XWWK';
+  src: url('/woff/xwwk.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 歌词字体设置 */
+.aplayer-lrc,
+.aplayer-lrc p {
+  font-family: 'XWWK', var(--global-font) !important;
+  font-size: 16px !important;
+  letter-spacing: 0.1em;
+}
