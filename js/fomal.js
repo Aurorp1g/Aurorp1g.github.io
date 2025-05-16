@@ -3165,7 +3165,7 @@ if (localStorage.getItem("blogbg") != undefined) {
   document.getElementById("defineBg").innerText = `:root{
     --default-bg: url('../assets/default_background.jpg');
     --darkmode-bg:url('../assets/darkmode_background.jpg');
-    --mobileday-bg: url("../assets/mb5.webp");
+    --mobileday-bg: url("../assets/mb5.jpg");
     --mobilenight-bg: url("../assets/mb5.webp");
   }`;
 }
