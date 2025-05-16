@@ -105,7 +105,7 @@
     display: block;
     position: fixed; /* 固定位置 */
     bottom: 20px; /* 距离底部20像素 */
-    left: 90px; /* 距离左侧20像素 */
+    left: 170px; /* 距离左侧170像素 */
     margin: 0;
     z-index: 98;
     pointer-events: none;
@@ -521,9 +521,9 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00ffffff", endColorstr="#ccffffff", GradientType=0)
 }
 
-/* 修改歌词字重 */
+/* 修改歌词字重，字体粗细 */
 .aplayer-lrc p {
-    font-weight: 300 !important; /* medium 字重 */
+    font-weight: 250 !important; /* medium 字重 */
 }
 
 .aplayer-lrc p.aplayer-lrc-current {
