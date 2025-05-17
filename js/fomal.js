@@ -675,7 +675,7 @@ if (document.body.clientWidth > 992) {
         z_index: 9999,
         zoom: 0.9,
         borderRadius: '5px',
-        right: '55.6px',
+        right: '59.0px',
         nekoImg: [
           "./assets/62d812db74be9.png",   // 主用本地路径
           "../assets/62d812db74be9.png",   // 一级路径1
