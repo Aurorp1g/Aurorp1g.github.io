@@ -736,7 +736,7 @@ if (document.body.clientWidth > 992) {
         "border-radius": setting.borderRadius,
         'right': setting.right,
         'background-image': [
-          `url(${setting.scImg})`,
+          `url('https://aurorp1g.github.io/assets/rope.png')`,
           '-webkit-linear-gradient(45deg, rgba(255,255,255,0.1) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0.1) 75%, transparent 75%, transparent)'
         ],
         'background-size': 'contain'
