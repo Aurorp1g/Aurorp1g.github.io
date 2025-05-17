@@ -684,7 +684,7 @@ if (document.body.clientWidth > 992) {
           "../../../../assets/62d812db74be9.png",    // 四级路径4
           "../../../../../assets/62d812db74be9.png",    // 五级路径5
         ],
-        defaultNekoImg: "https://bu.dusays.com/2022/07/20/62d812db74be9.png", // 云端保底
+        defaultNekoImg: "https://aurorp1g.github.io/assets/62d812db74be9.png", // 云端保底
         hoverMsg: "喵喵喵~",
         color: "var(--theme-color)",
         during: 500,
