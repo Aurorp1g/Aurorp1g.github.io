@@ -3340,6 +3340,7 @@ function createWinbox() {
   window.addEventListener("resize", winResize);
 
   // 每一类我放了一个演示，直接往下复制粘贴 a标签 就可以，需要注意的是 函数里面的链接 冒号前面需要添加反斜杠\进行转义
+  // 废案，重新启用的话需要修改下面失效的链接，同时取消nav.pug 中关于美化设置的注释
   winbox.body.innerHTML = `
 <div class="settings" style="display: block;">
 <div id="article-container" style="padding:12px;">
