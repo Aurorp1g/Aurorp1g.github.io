@@ -16,6 +16,14 @@ new APlayer({
         theme: '#1F1F1F'
       },
       {
+        name: '第57次取消发送',
+        artist: '菲菲公主',
+        url: '/music/mp3/第57次取消发送.mp3',
+        cover: '/music/cover/第57次.jpg',
+        lrc: '/music/lrc/第57次取消发送.lrc',
+        theme: '#1F1F1F'
+      },
+      {
         name: '降临',
       artist: 'Breen',
       url: '/music/mp3/降临.mp3',
