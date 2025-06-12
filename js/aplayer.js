@@ -8,6 +8,14 @@ new APlayer({
     lrcType: 3,
     audio: [
       {
+        name: 'VORTEX',
+        artist: '白鲨JAWS',
+        url: '/music/mp3/VORTEX.mp3',
+        cover: '/music/cover/VORTEX.jpg',
+        lrc: '/music/lrc/VORTEX.lrc',
+        theme: '#1F1F1F'
+      },
+      {
         name: 'Follow(罗生门)',
         artist: '梨冻紧&张子豪',
         url: '/music/mp3/Follow(罗生门).mp3',
