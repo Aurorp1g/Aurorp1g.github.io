@@ -1142,7 +1142,7 @@ function createtime1() {
   setTimeout(
     console.log.bind(
       console,
-      `\n%c${ascll[0]} %c ${ascll[1]} %c ${ascll[2]} %c${ascll[3]}%c ${ascll[4]}%c ${ascll[5]}\n\n%c ${ascll[6]}\n`,
+      `\n%c${ascll[0]} %c ${ascll[1]} \n %c ${ascll[2]} %c${ascll[3]}%c ${ascll[4]}%c ${ascll[5]}\n\n%c ${ascll[6]}\n`,
       "color:#39c5bb",
       "",
       "color:#39c5bb",
@@ -1157,33 +1157,33 @@ function createtime1() {
 createtime1();
 
 function createtime2() {
-  var ascll2 = [`NCC2-036`, `调用前置摄像头拍照成功，识别为「大聪明」`, `Photo captured: `, ` 🤪 `];
+  var ascll2 = [`NCC2-036`, `调用前置摄像头拍照成功，识别为「大聪明」📷️`, `Photo captured: `, ` 🤪 `];
 
   setTimeout(
     console.log.bind(
       console,
       `%c ${ascll2[0]} %c ${ascll2[1]} %c \n${ascll2[2]} %c\n${ascll2[3]}`,
-      "color:white; background-color:#10bcc0",
+      "color:white; background-color:#0d8d8fff",
       "",
       "",
-      'background:url("https://unpkg.zhimg.com/anzhiyu-assets@latest/image/common/tinggge.gif") no-repeat;font-size:450%'
+      'background:url("https://unpkg.zhimg.com/anzhiyu-assets@latest/image/common/tinggge.gif") no-repeat;font-size:600%'
     )
   );
 
-  setTimeout(console.log.bind(console, "%c WELCOME %c 欢迎光临，大聪明", "color:white; background-color:#23c682", ""));
+  setTimeout(console.log.bind(console, "%c WELCOME %c 欢迎光临，大聪明", "color:white; background-color:#1ca86eff", ""));
 
   setTimeout(
-    console.warn.bind(
+    console.log.bind(
       console,
-      "%c ⚡ Powered by Aurorp1g🥝 %c 你正在访问 Aurorp1g 的博客",
-      "color:white; background-color:#f0ad4e",
+      "%c ⚡ Powered by Aurorp1g %c 你正在访问 Aurorp1g 的博客 🐳",
+      "color:#fadfa3; background-color:#030307; padding:5px 0;",
       ""
     )
   );
 
-  setTimeout(console.log.bind(console, "%c W23-12 %c 系统监测到你已打开控制台", "color:white; background-color:#4f90d9", ""));
+  setTimeout(console.warn.bind(console, "%c W23-12 %c 系统监测到你已打开控制台", "color:white; background-color:#2B769F", ""));
   setTimeout(
-    console.warn.bind(console, "%c S013-782 %c 你现在正处于监控中", "color:white; background-color:#d9534f", "")
+    console.warn.bind(console, "%c S013-782 %c 你现在正处于监控中···", "color:white; background-color:#d9534f", "")
   );
 }
 createtime2();
