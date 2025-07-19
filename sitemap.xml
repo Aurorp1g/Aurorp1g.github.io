@@ -331,6 +331,13 @@
   </url>
   
   <url>
+    <loc>https://aurorp1g.github.io/tags/Python/</loc>
+    <lastmod>2025-07-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://aurorp1g.github.io/tags/Markdown/</loc>
     <lastmod>2025-07-19</lastmod>
     <changefreq>weekly</changefreq>
@@ -345,7 +352,7 @@
   </url>
   
   <url>
-    <loc>https://aurorp1g.github.io/tags/Python/</loc>
+    <loc>https://aurorp1g.github.io/tags/Java/</loc>
     <lastmod>2025-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -353,13 +360,6 @@
   
   <url>
     <loc>https://aurorp1g.github.io/tags/HTML/</loc>
-    <lastmod>2025-07-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://aurorp1g.github.io/tags/Java/</loc>
     <lastmod>2025-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
