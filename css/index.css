@@ -5071,9 +5071,6 @@ h1.page-title + .tag-cloud-list {
 .katex-wrap {
   overflow: auto;
 }
-.katex-wrap::-webkit-scrollbar {
-  display: none;
-}
 mjx-container[display],
 .has-jax {
   overflow-x: auto;
@@ -6861,10 +6858,10 @@ div#archive {
 
 /* 右下角闭眼 */
 .el-textarea__inner {
-  background-image: url(/assets/open.webp) !important;
+  background-image: url(/assets/twikoo/open.webp) !important;
 }
 .el-textarea__inner:focus {
-  background-image: url(/assets/close.webp) !important;
+  background-image: url(/assets/twikoo/close.webp) !important;
 }
 
 /* 调整楼中楼样式 ，整体左移，贴合气泡化效果 */
@@ -8451,7 +8448,7 @@ li.categoryBar-list-item {
   display: none;
   width: 100px;
   height: 100px;
-  background-image: url("../../img/62d812d95e6f5.png");
+  background-image: url("../../assets/cat_rope/dialog.png");
   background-size: contain;
   z-index: 9999;
   position: absolute;

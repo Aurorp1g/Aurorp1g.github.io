@@ -677,14 +677,14 @@ if (document.body.clientWidth > 992) {
         borderRadius: '5px',
         right: '59.0px',
         nekoImg: [
-          "./assets/62d812db74be9.png",   // 主用本地路径
-          "../assets/62d812db74be9.png",   // 一级路径1
-          "../../assets/62d812db74be9.png",    // 二级路径2
-          "../../../assets/62d812db74be9.png" ,    // 三级路径3
-          "../../../../assets/62d812db74be9.png",    // 四级路径4
-          "../../../../../assets/62d812db74be9.png",    // 五级路径5
+          "./assets/cat_rope/cat.png",   // 主用本地路径
+          "../assets/cat_rope/cat.png",   // 一级路径1
+          "../../assets/cat_rope/cat.png",    // 二级路径2
+          "../../../assets/cat_rope/cat.png" ,    // 三级路径3
+          "../../../../assets/cat_rope/cat.png",    // 四级路径4
+          "../../../../../assets/cat_rope/cat.png",    // 五级路径5
         ],
-        defaultNekoImg: "https://aurorp1g.github.io/assets/62d812db74be9.png", // 云端保底
+        defaultNekoImg: "https://aurorp1g.github.io/assets/cat_rope/cat.png", // 云端保底
         hoverMsg: "喵喵喵~",
         color: "var(--theme-color)",
         during: 500,
@@ -736,7 +736,7 @@ if (document.body.clientWidth > 992) {
         "border-radius": setting.borderRadius,
         'right': setting.right,
         'background-image': [
-          `url('https://aurorp1g.github.io/assets/rope.png')`,
+          `url('https://aurorp1g.github.io/assets/cat_rope/rope.png')`,
           '-webkit-linear-gradient(45deg, rgba(255,255,255,0.1) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0.1) 75%, transparent 75%, transparent)'
         ],
         'background-size': 'contain'
@@ -2614,8 +2614,8 @@ function createtime() {
   let currentTimeHtml = "";
   (currentTimeHtml =
     hnum < 18 && hnum >= 9
-      ? `<img class='boardsign' src='https://aurorp1g.github.io/assets/A小屋-科研摸鱼中.svg' title='什么时候能够实现财富自由呀~'' title='什么时候能够实现财富自由呀~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`
-      : `<img class='boardsign' src='https://aurorp1g.github.io/assets/A小屋-下班休息啦.svg' title='下班了就该开开心心地玩耍~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`),
+      ? `<img class='boardsign' src='https://aurorp1g.github.io/assets/footer/A小屋-科研摸鱼中.svg' title='什么时候能够实现财富自由呀~'' title='什么时候能够实现财富自由呀~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`
+      : `<img class='boardsign' src='https://aurorp1g.github.io/assets/footer/A小屋-下班休息啦.svg' title='下班了就该开开心心地玩耍~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`),
     document.getElementById("workboard") &&
     (document.getElementById("workboard").innerHTML = currentTimeHtml);
 }
@@ -2984,10 +2984,10 @@ if (localStorage.getItem("blogbg") != undefined) {
   setBg(localStorage.getItem("blogbg"));
 } else {
   document.getElementById("defineBg").innerText = `:root{
-    --default-bg: url('../assets/default_background.jpg');
-    --darkmode-bg:url('../assets/darkmode_background.jpg');
-    --mobileday-bg: url("../assets/mb5.png");
-    --mobilenight-bg: url("../assets/mb5.webp");
+    --default-bg: url('../assets/backgrounds/default_background.jpg');
+    --darkmode-bg:url('../assets/backgrounds/darkmode_background.jpg');
+    --mobileday-bg: url("../assets/backgrounds/mb5.png");
+    --mobilenight-bg: url("../assets/backgrounds/mb5.webp");
   }`;
 }
 // 切换背景主函数
