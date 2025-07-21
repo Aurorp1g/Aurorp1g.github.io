@@ -16,5 +16,4 @@
  
 ### ✨ 座右铭 | Motto  
 > 在二进制构成的数字宇宙里，我努力创建有价值且具有创新性的成果。
-  
 > *“In the world of 0s and 1s, I strive to build something meaningful and innovative.”*
