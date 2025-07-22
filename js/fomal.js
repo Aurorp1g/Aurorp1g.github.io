@@ -677,12 +677,12 @@ if (document.body.clientWidth > 992) {
         borderRadius: '5px',
         right: '59.0px',
         nekoImg: [
-          "./assets/cat_rope/cat.png",   // 主用本地路径
-          "../assets/cat_rope/cat.png",   // 一级路径1
-          "../../assets/cat_rope/cat.png",    // 二级路径2
-          "../../../assets/cat_rope/cat.png" ,    // 三级路径3
-          "../../../../assets/cat_rope/cat.png",    // 四级路径4
-          "../../../../../assets/cat_rope/cat.png",    // 五级路径5
+          "https://aurorp1g.github.io/assets/cat_rope/cat.png",   // 主用本地路径
+          "https://aurorp1g.github.io/assets/cat_rope/cat.png",   // 一级路径1
+          "https://aurorp1g.github.io/assets/cat_rope/cat.png",    // 二级路径2
+          "https://aurorp1g.github.io/assets/cat_rope/cat.png" ,    // 三级路径3
+          "https://aurorp1g.github.io/assets/cat_rope/cat.png",    // 四级路径4
+          "https://aurorp1g.github.io/assets/cat_rope/cat.png",    // 五级路径5
         ],
         defaultNekoImg: "https://aurorp1g.github.io/assets/cat_rope/cat.png", // 云端保底
         hoverMsg: "喵喵喵~",
