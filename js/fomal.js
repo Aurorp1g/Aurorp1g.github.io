@@ -68,42 +68,33 @@ function scrollToTop() {
 //----------------------------------------------------------------
 
 /* 欢迎信息 start */
-//get请求
-$.ajax({
-  type: 'get',
-  url: 'https://apis.map.qq.com/ws/location/v1/ip',
-  data: {
-    key: '5QNBZ-DVQKZ-2BBX2-7TDJH-IFAKZ-XBF6O',  // 这里要写你的KEY!!!
-    output: 'jsonp',
-  },
-  dataType: 'jsonp',
-  success: function (res) {
-    ipLoacation = res;
-  }
-})
-function getDistance(e1, n1, e2, n2) {
-  const R = 6371
-  const { sin, cos, asin, PI, hypot } = Math
-  let getPoint = (e, n) => {
-    e *= PI / 180
-    n *= PI / 180
-    return { x: cos(n) * cos(e), y: cos(n) * sin(e), z: sin(n) }
-  }
+// CORS 版本，变量名保持原样
+let ipLoacation = null;
 
-  let a = getPoint(e1, n1)
-  let b = getPoint(e2, n2)
-  let c = hypot(a.x - b.x, a.y - b.y, a.z - b.z)
-  let r = asin(c / 2) * 2 * R
+function getDistance(e1, n1, e2, n2) {
+  const R = 6371;
+  const { sin, cos, asin, PI, hypot } = Math;
+  let getPoint = (e, n) => {
+    e *= PI / 180;
+    n *= PI / 180;
+    return { x: cos(n) * cos(e), y: cos(n) * sin(e), z: sin(n) };
+  };
+
+  let a = getPoint(e1, n1);
+  let b = getPoint(e2, n2);
+  let c = hypot(a.x - b.x, a.y - b.y, a.z - b.z);
+  let r = asin(c / 2) * 2 * R;
   return Math.round(r);
 }
 
 function showWelcome() {
+  if (!ipLoacation || ipLoacation.status !== 0) return;
 
-  let dist = getDistance(116.7515585, 23.4694075, ipLoacation.result.location.lng, ipLoacation.result.location.lat); //这里换成自己的经纬度
+  let dist = getDistance(116.7515585, 23.4694075, ipLoacation.result.location.lng, ipLoacation.result.location.lat);
   let pos = ipLoacation.result.ad_info.nation;
   let ip;
   let posdesc;
-  //根据国家、省份、城市信息自定义欢迎语
+
   switch (ipLoacation.result.ad_info.nation) {
     case "日本":
       posdesc = "よろしく，一起去看樱花吗";
@@ -284,7 +275,6 @@ function showWelcome() {
       break;
   }
 
-  //根据本地时间切换欢迎语
   let timeChange;
   let date = new Date();
   if (date.getHours() >= 5 && date.getHours() < 11) timeChange = "<span>上午好</span>，一日之计在于晨！";
@@ -296,17 +286,37 @@ function showWelcome() {
   else timeChange = "夜深了，早点休息，少熬夜。";
 
   try {
-    //自定义文本和需要放的位置
     document.getElementById("welcome-info").innerHTML =
       `<b><center>🎉 欢迎信息 🎉</center>&emsp;&emsp;欢迎来自 <span style="color:var(--theme-color)">${pos}</span> 的小伙伴。${timeChange}您现在距离站长约 <span style="color:var(--theme-color)">${dist}</span> 公里，当前的IP地址为： <span style="color:var(--theme-color)">${ip}</span>， ${posdesc}</b>`;
   } catch (err) {
     // console.log("Pjax无法获取#welcome-info元素🙄🙄🙄")
   }
 }
-window.onload = showWelcome;
-// 如果使用了pjax在加上下面这行代码
-document.addEventListener('pjax:complete', showWelcome);
 
+// CORS 方式获取 IP 位置
+fetch("https://apis.map.qq.com/ws/location/v1/ip?key=5QNBZ-DVQKZ-2BBX2-7TDJH-IFAKZ-XBF6O", {
+  method: "GET",
+  mode: "cors",
+  redirect: "follow"
+})
+  .then(r => r.json())
+  .then(data => {
+    if (data.status === 0) {
+      ipLoacation = data;   // ← 变量名保持原样
+      showWelcome();
+    } else {
+      throw new Error(data.message || "位置获取失败");
+    }
+  })
+  .catch(err => {
+    console.error(err);
+    document.getElementById("welcome-info").innerHTML = "无法获取您的位置信息，欢迎访问！";
+  });
+
+// 兼容 pjax
+document.addEventListener('pjax:complete', () => {
+  if (ipLoacation) showWelcome();
+});
 /* 欢迎信息 end */
 
 //----------------------------------------------------------------
