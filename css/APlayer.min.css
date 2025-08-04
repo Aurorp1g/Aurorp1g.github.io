@@ -1,5 +1,50 @@
+/* 白天模式变量定义 */
+:root {
+  --aplayer-bg: #fff;
+  --aplayer-svg-bg: #fff;
+  --aplayer-withlist-bg: #e9e9e9;
+  --aplayer-fixed-bg: #eee;
+  --aplayer-fixed-info: #e9e9e9;
+  --aplayer-pic-button: rgba(0, 0, 0, .2);
+  --aplayer-pic-button-path: #fff;
+  --aplayer-pic-play: #fff;
+  --aplayer-info: #666;
+  --aplayer-info-controller: #cdcdcd;
+  --aplayer-info-controller-loaded: #aaa;
+  --aplayer-info-controller-time : #999;
+  --aplayer-info-controller-icon: #000;
+  --aplayer-info-controller-wrap:#aaa;
+  --aplayer-info-controller-thumb:#eee;
+  --aplayer-info-controller-thumb-drag:#ccc;
+  --aplayer-notice: #909399;
+  --aplayer-miniswitcher: #e6e6e6;
+}
+
+/* 黑夜模式变量重写 */
+[data-theme="dark"] {
+  --aplayer-bg: rgba(0,0,0,.8);
+  --aplayer-svg-bg: rgba(0,0,0,.8);
+  --aplayer-withlist-bg: #363636;
+  --aplayer-fixed-bg: #000000;
+  --aplayer-fixed-info: #626262;
+  --aplayer-pic-button: rgba(255,255,255,.4);
+  --aplayer-pic-button-path: rgba(255,255,255,.9);
+  --aplayer-pic-play: rgba(255,255,255,.6);
+  --aplayer-info: #aeaeae;
+  --aplayer-info-controller: #626262;
+  --aplayer-info-controller-loaded: #626262;
+  --aplayer-info-controller-time : #aeaeae;
+  --aplayer-info-controller-icon: #fff;
+  --aplayer-info-controller-wrap: #363636;
+  --aplayer-info-controller-thumb:#363636;
+  --aplayer-info-controller-thumb-drag:#363636;
+  --aplayer-notice: #626262;
+  --aplayer-miniswitcher: #1B1C1D;
+}
+
+
 .aplayer {
-    background: #fff;
+    background: var(--aplayer-bg);
     font-family: Arial, Helvetica, sans-serif;
     margin: 5px;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .07), 0 1px 5px 0 rgba(0, 0, 0, .1);
@@ -22,13 +67,12 @@
     height: 100%
 }
 
-.aplayer svg circle,
-.aplayer svg path {
-    fill: #fff
+.aplayer svg circle,.aplayer svg path {
+    fill: var(--aplayer-svg-bg);
 }
 
 .aplayer.aplayer-withlist .aplayer-info {
-    border-bottom: 1px solid #e9e9e9
+    border-bottom: 1px solid var(--aplayer-withlist-bg);
 }
 
 .aplayer.aplayer-withlist .aplayer-list {
@@ -84,7 +128,7 @@
 
 .aplayer.aplayer-fixed .aplayer-list {
     margin-bottom: 65px;
-    border: 1px solid #eee;
+    border: 1px solid var(--aplayer-fixed-bg);
     border-bottom: none
 }
 
@@ -95,7 +139,7 @@
     right: 0;
     margin: 0;
     z-index: 99;
-    background: #fff;
+    background: var(--aplayer-fixed-bg);
     padding-right: 18px;
     transition: all .3s ease;
     max-width: 400px
@@ -109,7 +153,7 @@
     margin: 0;
     z-index: 98;
     pointer-events: none;
-    text-shadow: -1px -1px 0 #fff
+    text-shadow: -1px -1px 0 var(--aplayer-fixed-bg)
 }
 
 .aplayer.aplayer-fixed .aplayer-lrc:after,
@@ -125,7 +169,7 @@
     transition: all .3s ease;
     bottom: 600px;
     border-bottom: none;
-    border-top: 1px solid #e9e9e9
+    border-top: 1px solid var(--aplayer-fixed-info);
 }
 
 .aplayer.aplayer-fixed .aplayer-info .aplayer-music {
@@ -262,14 +306,14 @@
     position: absolute;
     border-radius: 50%;
     opacity: .8;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
-    background: rgba(0, 0, 0, .2);
+    text-shadow: 0 1px 1px var(--aplayer-pic-button);
+    box-shadow: 0 1px 1px var(--aplayer-pic-button);
+    background: var(--aplayer-pic-button);
     transition: all .1s ease
 }
 
 .aplayer .aplayer-pic .aplayer-button path {
-    fill: #fff
+    fill: var(--aplayer-pic-button-path);
 }
 
 .aplayer .aplayer-pic .aplayer-hide {
@@ -279,7 +323,7 @@
 .aplayer .aplayer-pic .aplayer-play {
     width: 26px;
     height: 26px;
-    border: 2px solid #fff;
+    border: 2px solid var(--aplayer-pic-play);
     bottom: 50%;
     right: 50%;
     margin: 0 -15px -15px 0
@@ -296,7 +340,7 @@
 .aplayer .aplayer-pic .aplayer-pause {
     width: 16px;
     height: 16px;
-    border: 2px solid #fff;
+    border: 2px solid var(--aplayer-pic-play);
     bottom: 4px;
     right: 4px
 }
@@ -336,7 +380,7 @@
 
 .aplayer .aplayer-info .aplayer-music .aplayer-author {
     font-size: 12px;
-    color: #666
+    color: var(--aplayer-info);
 }
 
 .aplayer .aplayer-info .aplayer-controller {
@@ -360,7 +404,7 @@
     position: relative;
     height: 2px;
     width: 100%;
-    background: #cdcdcd
+    background: var(--aplayer-info-controller);
 }
 
 .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-loaded {
@@ -368,7 +412,7 @@
     left: 0;
     top: 0;
     bottom: 0;
-    background: #aaa;
+    background: var(--aplayer-info-controller-loaded);
     height: 2px;
     transition: all .5s ease
 }
@@ -401,7 +445,7 @@
     right: 0;
     bottom: 4px;
     height: 17px;
-    color: #999;
+    color: var(--aplayer-info-controller-time);
     font-size: 11px;
     padding-left: 7px
 }
@@ -416,7 +460,7 @@
 }
 
 .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon path {
-    fill: #666
+    fill: var(--aplayer-info);
 }
 
 .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon.aplayer-icon-loop {
@@ -424,7 +468,7 @@
 }
 
 .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon:hover path {
-    fill: #000
+    fill: var(--aplayer-icon-hover);
 }
 
 .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon.aplayer-icon-menu,
@@ -465,7 +509,7 @@
     right: 10px;
     width: 5px;
     height: 35px;
-    background: #aaa;
+    background: var(--aplayer-info-controller-wrap);
     border-radius: 2.5px;
     overflow: hidden
 }
@@ -500,7 +544,7 @@
 .aplayer .aplayer-lrc:before {
     top: 0;
     height: 10%;
-    background: linear-gradient(180deg, #fff 0, hsla(0, 0%, 100%, 0));
+    background: linear-gradient(180deg, var(--aplayer-bg) 0, hsla(0, 0%, 100%, 0));
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#00ffffff", GradientType=0)
 }
 
@@ -532,7 +576,7 @@
 
 .aplayer .aplayer-lrc p {
     font-size: 15px;
-    color: #666;
+    color: var(--aplayer-info);
     line-height: 16px !important;
     height: 16px !important;
     padding: 0 !important;
@@ -588,11 +632,11 @@
 
 .aplayer .aplayer-list ol::-webkit-scrollbar-thumb {
     border-radius: 3px;
-    background-color: #eee
+    background-color: var(--aplayer-info-controller-thumb);
 }
 
 .aplayer .aplayer-list ol::-webkit-scrollbar-thumb:hover {
-    background-color: #ccc
+    background-color: var(--aplayer-info-controller-thumb-drag);
 }
 
 .aplayer .aplayer-list ol li {
@@ -601,7 +645,7 @@
     line-height: 32px;
     padding: 0 15px;
     font-size: 12px;
-    border-top: 1px solid #e9e9e9;
+    border-top: 1px solid var(--aplayer-withlist-bg);
     cursor: pointer;
     transition: all .2s ease;
     overflow: hidden;
@@ -611,13 +655,13 @@
 .aplayer .aplayer-list ol li:first-child {
     border-top: none
 }
-
+/*这偷懒了*/
 .aplayer .aplayer-list ol li:hover {
-    background: #efefef
+    background: var(--aplayer-info-controller-thumb);
 }
 
 .aplayer .aplayer-list ol li.aplayer-list-light {
-    background: #e9e9e9
+    background: var(--aplayer-info-controller-thumb);
 }
 
 .aplayer .aplayer-list ol li.aplayer-list-light .aplayer-list-cur {
@@ -635,13 +679,13 @@
 }
 
 .aplayer .aplayer-list ol li .aplayer-list-index {
-    color: #666;
+    color: var(--aplayer-info);
     margin-right: 12px;
     cursor: pointer
 }
 
 .aplayer .aplayer-list ol li .aplayer-list-author {
-    color: #666;
+    color: var(--aplayer-info);
     float: right;
     cursor: pointer
 }
@@ -658,10 +702,10 @@
     padding: 5px 10px;
     transition: all .3s ease-in-out;
     overflow: hidden;
-    color: #fff;
+    color: var(--aplayer-bg);
     pointer-events: none;
-    background-color: #f4f4f5;
-    color: #909399
+    background-color: var(--aplayer-info-controller-thumb);
+    color: var(--aplayer-notice);
 }
 
 .aplayer .aplayer-miniswitcher {
@@ -670,7 +714,7 @@
     top: 0;
     right: 0;
     height: 100%;
-    background: #e6e6e6;
+    background: var(--aplayer-miniswitcher);
     width: 18px;
     border-radius: 0 2px 2px 0
 }
@@ -688,7 +732,7 @@
 }
 
 .aplayer .aplayer-miniswitcher .aplayer-icon:hover path {
-    fill: #000
+    fill: var(--aplayer-info-controller-icon);
 }
 
 @-webkit-keyframes aplayer-roll {

@@ -467,14 +467,14 @@
   </url>
   
   <url>
-    <loc>https://aurorp1g.github.io/tags/Java/</loc>
+    <loc>https://aurorp1g.github.io/tags/HTML/</loc>
     <lastmod>2025-08-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://aurorp1g.github.io/tags/HTML/</loc>
+    <loc>https://aurorp1g.github.io/tags/Java/</loc>
     <lastmod>2025-08-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -518,13 +518,6 @@
   </url>
   
   <url>
-    <loc>https://aurorp1g.github.io/categories/VScode/</loc>
-    <lastmod>2025-08-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://aurorp1g.github.io/categories/%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E5%BC%80%E5%8F%91/</loc>
     <lastmod>2025-08-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -533,6 +526,13 @@
   
   <url>
     <loc>https://aurorp1g.github.io/categories/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/</loc>
+    <lastmod>2025-08-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://aurorp1g.github.io/categories/VScode/</loc>
     <lastmod>2025-08-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
