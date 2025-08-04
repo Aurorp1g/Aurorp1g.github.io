@@ -155,3 +155,15 @@ function waterfall(a) {
     var t = f(a);
     window.addEventListener ? window.addEventListener("resize", k) : (document.body.onresize = k);
   }
+
+/*首页mini即刻*/
+if (document.querySelector('#bber-talk')) {
+      var swiper = new Swiper('.swiper-container', {
+        direction: 'vertical', 
+        loop: true,
+        autoplay: {
+        delay: 3000,
+        pauseOnMouseEnter: true
+      },
+      });
+    }
