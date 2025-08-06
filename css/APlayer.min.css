@@ -111,7 +111,8 @@
 .aplayer.aplayer-narrow .aplayer-body,
 .aplayer.aplayer-narrow .aplayer-pic {
     height: 66px;
-    width: 66px
+    width: 66px;
+    overflow: hidden;
 }
 
 .aplayer.aplayer-fixed {
@@ -141,10 +142,11 @@
     z-index: 99;
     background: var(--aplayer-fixed-bg);
     padding-right: 18px;
-    transition: all .3s ease;
+    transition: all .3s ease; /* 确保宽度过渡平滑 */
     max-width: 400px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+    overflow: hidden; /* 添加溢出隐藏 */
 }
 
 .aplayer.aplayer-fixed .aplayer-lrc {
