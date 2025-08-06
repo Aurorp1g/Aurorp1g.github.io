@@ -142,7 +142,9 @@
     background: var(--aplayer-fixed-bg);
     padding-right: 18px;
     transition: all .3s ease;
-    max-width: 400px
+    max-width: 400px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .aplayer.aplayer-fixed .aplayer-lrc {
@@ -177,7 +179,9 @@
 }
 
 .aplayer.aplayer-fixed .aplayer-miniswitcher {
-    display: block
+    display: block;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .aplayer.aplayer-fixed.aplayer-narrow .aplayer-info {
@@ -187,7 +191,9 @@
 }
 
 .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
-    width: 66px !important
+    width: 66px !important;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .aplayer.aplayer-fixed.aplayer-narrow .aplayer-miniswitcher .aplayer-icon {
