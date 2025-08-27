@@ -321,11 +321,15 @@ console.warn = function () { };
   var mnum;
   var snum;
   var nowHour;
+  var start = new Date("03/01/2025 00:00:00"); // 旅行者1号开始计算的时间
+  var dis, unit;
 
   // 计算并更新天数、小时数、分钟数和秒数
   function updateTime() {
-    now = new Date(); // 更新 now 的值
-    nowHour = now.getHours(); // 更新 nowHour 的值
+    now = new Date();
+    nowHour = now.getHours();
+    dis = Math.trunc(23400000000 + ((now - start) / 1000) * 17);
+    unit = (dis / 149600000).toFixed(6);
     var days = (now - grt) / 1000 / 60 / 60 / 24;
     dnum = Math.floor(days);
     var hours = (now - grt) / 1000 / 60 / 60 - 24 * dnum;
@@ -352,7 +356,7 @@ console.warn = function () { };
     let currentTimeHtml = "";
     if (nowHour < 18 && nowHour >= 9) {
       // 如果是上班时间，默认就是"安知鱼-上班摸鱼中.svg"图片，不需要更改
-      currentTimeHtml = `本站居然运行了 ${dnum} 天<span id='runtime'> ${hnum} 小时 ${mnum} 分 ${snum} 秒 </span><i class='anzhiyufont anzhiyu-icon-heartbeat' style='color:red'></i>`;
+      currentTimeHtml = `本站居然运行了 ${dnum} 天<span id='runtime'> ${hnum} 小时 ${mnum} 分 ${snum} 秒 </span><i class='anzhiyufont anzhiyu-icon-heartbeat' style='color:red'></i><br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀`;
     } else {
       // 如果是下班时间，插入"安知鱼-下班啦.svg"图片
       let img = document.querySelector("#workboard .workSituationImg");
@@ -362,7 +366,7 @@ console.warn = function () { };
         img.alt = "下班了就该开开心心的玩耍，嘿嘿~";
       }
 
-      currentTimeHtml = `本站居然运行了 ${dnum} 天<span id='runtime'> ${hnum} 小时 ${mnum} 分 ${snum} 秒 </span><i class='anzhiyufont anzhiyu-icon-heartbeat' style='color:red'></i>`;
+      currentTimeHtml = `本站居然运行了 ${dnum} 天<span id='runtime'> ${hnum} 小时 ${mnum} 分 ${snum} 秒 </span><i class='anzhiyufont anzhiyu-icon-heartbeat' style='color:red'></i><br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀`;
     }
 
     if (document.getElementById("runtimeTextTip")) {
