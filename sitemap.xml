@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://aurorp1g.github.io/personal/love/photos/index.html</loc>
+    
+    <lastmod>2025-08-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://aurorp1g.github.io/personal/album/2025/index.html</loc>
+    
+    <lastmod>2025-08-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://aurorp1g.github.io/update/index.html</loc>
     
     <lastmod>2025-08-27</lastmod>
@@ -65,25 +83,7 @@
   </url>
   
   <url>
-    <loc>https://aurorp1g.github.io/personal/love/photos/index.html</loc>
-    
-    <lastmod>2025-08-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://aurorp1g.github.io/personal/love/love_tree/index.html</loc>
-    
-    <lastmod>2025-08-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://aurorp1g.github.io/personal/album/2025/index.html</loc>
     
     <lastmod>2025-08-13</lastmod>
     
@@ -492,14 +492,14 @@
   </url>
   
   <url>
-    <loc>https://aurorp1g.github.io/tags/Linux/</loc>
+    <loc>https://aurorp1g.github.io/tags/PWN/</loc>
     <lastmod>2025-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://aurorp1g.github.io/tags/PWN/</loc>
+    <loc>https://aurorp1g.github.io/tags/Linux/</loc>
     <lastmod>2025-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -522,14 +522,14 @@
 
   
   <url>
-    <loc>https://aurorp1g.github.io/categories/%E7%90%90%E8%AE%B0/</loc>
+    <loc>https://aurorp1g.github.io/categories/Crypto/</loc>
     <lastmod>2025-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://aurorp1g.github.io/categories/Crypto/</loc>
+    <loc>https://aurorp1g.github.io/categories/%E7%90%90%E8%AE%B0/</loc>
     <lastmod>2025-08-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
