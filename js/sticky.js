@@ -1,1 +1,0 @@
-var mySwiper=new Swiper("#random-banner",{direction:"horizontal",speed:600,loop:!0,effect:"fade",loopPreventsSlide:!1,autoplay:{delay:1e4},mousewheel:{sensitivity:.8,releaseOnEdges:!0,eventsTarget:"container",thresholdDelta:30},pagination:{el:".swiper-pagination",dynamicBullets:!0}});
