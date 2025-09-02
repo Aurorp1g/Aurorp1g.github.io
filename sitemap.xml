@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://aurorp1g.github.io/personal/album/index.html</loc>
+    <loc>https://aurorp1g.github.io/video/index.html</loc>
     
     <lastmod>2025-09-02</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://aurorp1g.github.io/video/index.html</loc>
+    <loc>https://aurorp1g.github.io/personal/album/index.html</loc>
     
     <lastmod>2025-09-02</lastmod>
     
@@ -459,7 +459,7 @@
   </url>
   
   <url>
-    <loc>https://aurorp1g.github.io/tags/HTML/</loc>
+    <loc>https://aurorp1g.github.io/tags/Java/</loc>
     <lastmod>2025-09-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -473,21 +473,7 @@
   </url>
   
   <url>
-    <loc>https://aurorp1g.github.io/tags/%E6%B1%87%E7%BC%96/</loc>
-    <lastmod>2025-09-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://aurorp1g.github.io/tags/Java/</loc>
-    <lastmod>2025-09-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://aurorp1g.github.io/tags/PWN/</loc>
+    <loc>https://aurorp1g.github.io/tags/HTML/</loc>
     <lastmod>2025-09-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -495,6 +481,20 @@
   
   <url>
     <loc>https://aurorp1g.github.io/tags/Markdown/</loc>
+    <lastmod>2025-09-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://aurorp1g.github.io/tags/%E6%B1%87%E7%BC%96/</loc>
+    <lastmod>2025-09-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://aurorp1g.github.io/tags/PWN/</loc>
     <lastmod>2025-09-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -538,14 +538,14 @@
   </url>
   
   <url>
-    <loc>https://aurorp1g.github.io/categories/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/</loc>
+    <loc>https://aurorp1g.github.io/categories/Coding/</loc>
     <lastmod>2025-09-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://aurorp1g.github.io/categories/Coding/</loc>
+    <loc>https://aurorp1g.github.io/categories/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/</loc>
     <lastmod>2025-09-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
