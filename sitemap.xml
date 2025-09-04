@@ -501,13 +501,6 @@
   </url>
   
   <url>
-    <loc>https://aurorp1g.github.io/tags/Python/</loc>
-    <lastmod>2025-09-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://aurorp1g.github.io/tags/Linux/</loc>
     <lastmod>2025-09-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -516,6 +509,13 @@
   
   <url>
     <loc>https://aurorp1g.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://aurorp1g.github.io/tags/Python/</loc>
     <lastmod>2025-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
