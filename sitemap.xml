@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://aurorp1g.github.io/update/index.html</loc>
+    
+    <lastmod>2025-09-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://aurorp1g.github.io/video/index.html</loc>
     
     <lastmod>2025-09-03</lastmod>
@@ -77,15 +86,6 @@
     <loc>https://aurorp1g.github.io/posts/1fc0b91f.html</loc>
     
     <lastmod>2025-09-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://aurorp1g.github.io/update/index.html</loc>
-    
-    <lastmod>2025-08-31</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -459,7 +459,7 @@
   </url>
   
   <url>
-    <loc>https://aurorp1g.github.io/tags/Java/</loc>
+    <loc>https://aurorp1g.github.io/tags/Markdown/</loc>
     <lastmod>2025-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -467,6 +467,13 @@
   
   <url>
     <loc>https://aurorp1g.github.io/tags/Study/</loc>
+    <lastmod>2025-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://aurorp1g.github.io/tags/Java/</loc>
     <lastmod>2025-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -481,13 +488,6 @@
   
   <url>
     <loc>https://aurorp1g.github.io/tags/%E6%B1%87%E7%BC%96/</loc>
-    <lastmod>2025-09-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://aurorp1g.github.io/tags/Markdown/</loc>
     <lastmod>2025-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
