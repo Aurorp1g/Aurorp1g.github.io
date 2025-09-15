@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://aurorp1g.github.io/posts/d3e10f3d.html</loc>
+    
+    <lastmod>2025-09-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://aurorp1g.github.io/posts/d9b2356c.html</loc>
     
     <lastmod>2025-09-15</lastmod>
@@ -588,14 +597,14 @@
   </url>
   
   <url>
-    <loc>https://aurorp1g.github.io/categories/CTF/</loc>
+    <loc>https://aurorp1g.github.io/categories/VScode/</loc>
     <lastmod>2025-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://aurorp1g.github.io/categories/VScode/</loc>
+    <loc>https://aurorp1g.github.io/categories/CTF/</loc>
     <lastmod>2025-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
