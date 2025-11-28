@@ -917,31 +917,6 @@
     
     
     <entry>
-      <title>My First Blog</title>
-      <link href="/posts/8a2ade14.html"/>
-      <url>/posts/8a2ade14.html</url>
-      
-        <content type="html"><![CDATA[<p>今天写我的第一篇博客。这几天我在忙着将自己本地电脑上的项目通过git上传到github</p><p>记录一下我搭建在github上的一个项目：生日祝福网站代码。这是一个在其他博主的网盘中复制来的，经过我的修改，更符合我的审美。</p><p>这原先是为我的一个朋友设计的网页，并没有搭载在服务器上，现在借用github pages功能，使其能够通过链接访问。</p><p>这是主页的效果：</p><p><img src="/img/My_First_Blog.png" alt="picture"></p><p>项目链接：<a href="https://github.com/Aurorp1g/Happy_Birthday">Happy_Birthday</a></p><hr><p>Today, I wrote my first blog post. These days, I have been busy uploading my local projects to GitHub via Git.</p><p>I would like to document a project I set up on GitHub: the code for a birthday blessing website. This project was copied from another blogger’s cloud storage and has been modified by me to better suit my aesthetic preferences.</p><p>Originally, this webpage was designed for a friend of mine and was not hosted on a server. Now, by leveraging the GitHub Pages feature, it can be accessed via a link.</p><p>Here is the effect of the homepage:</p><p><img src="/img/My_First_Blog.png" alt="picture"></p><p>The link to the project: <a href="https://github.com/Aurorp1g/Happy_Birthday">Happy_Birthday</a></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 琐记 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Daily Life </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Hello World</title>
       <link href="/posts/4a17b156.html"/>
       <url>/posts/4a17b156.html</url>
