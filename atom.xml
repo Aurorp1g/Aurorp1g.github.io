@@ -6,7 +6,7 @@
   <link href="https://aurorp1g.github.io/atom.xml" rel="self"/>
   
   <link href="https://aurorp1g.github.io/"/>
-  <updated>2025-11-13T00:54:20.092Z</updated>
+  <updated>2025-11-28T15:25:37.500Z</updated>
   <id>https://aurorp1g.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>生日祝福静态网站生成框架</title>
+    <link href="https://aurorp1g.github.io/posts/ff5467f1.html"/>
+    <id>https://aurorp1g.github.io/posts/ff5467f1.html</id>
+    <published>2025-11-26T15:02:48.000Z</published>
+    <updated>2025-11-28T15:25:37.500Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="生日祝福静态网站生成框架"><a href="#生日祝福静态网站生成框架" class="headerlink" title="生日祝福静态网站生成框架"></a>生日祝福静态网站生成框架</h1><blockquote><p>小猪猪的18岁生日快到了，想着写一个静态网站，来表达对她的祝福。原先网上是有一个简单的静态网站源码，但是考虑到网站源码的维护与复用问题，我决定自己写一个静态网站生成框架。使用了Node.js和Plop.js来构建，配置文件采用YAML格式，模板引擎采用Handlebars。</p><p>项目地址：<a href="https://github.com/Aurorp1g/Happy_Birthday">https://github.com/Aurorp1g/Happy_Birthday</a></p></blockquote><h2 id="项目介绍"><a href="#项目介绍" class="headerlink" title="项目介绍"></a>项目介绍</h2><p><strong>生日祝福静态网站生成框架</strong>：这是一个专为创建个性化生日祝福网站而设计的静态站点生成工具，让你能够轻松为朋友、家人创建独特而有意义的生日礼物，无需复杂的前端开发技能。</p><h2 id="项目特点"><a href="#项目特点" class="headerlink" title="项目特点"></a>项目特点</h2><p>这个框架具有以下几个突出特点：</p><h3 id="🎨-简单易用的配置系统"><a href="#🎨-简单易用的配置系统" class="headerlink" title="🎨 简单易用的配置系统"></a>🎨 简单易用的配置系统</h3><p>通过修改配置文件，你可以轻松自定义网站的各个方面，包括：</p><ul><li>祝福语和文本内容</li><li>图片资源和布局</li><li>背景音乐</li><li>页面样式和动画效果</li></ul><p>所有这些都可以在配置文件中完成，无需编写代码。</p><h3 id="📁-自动化的文件生成"><a href="#📁-自动化的文件生成" class="headerlink" title="📁 自动化的文件生成"></a>📁 自动化的文件生成</h3><p>框架基于Plop.js构建，能够自动：</p><ul><li>根据模板生成静态网站文件（HTML、CSS、JS）</li><li>复制和处理资源文件（图片、音乐等）</li><li>自动处理路径转换，确保网站部署后资源能正确加载</li></ul><h3 id="🎵-多媒体支持"><a href="#🎵-多媒体支持" class="headerlink" title="🎵 多媒体支持"></a>🎵 多媒体支持</h3><p>支持添加背景音乐，让你的祝福网站更加生动：</p><ul><li>可配置的音乐播放选项</li><li>多种音频格式支持</li><li>自动在用户浏览时播放</li></ul><h3 id="🎬-丰富的动画效果"><a href="#🎬-丰富的动画效果" class="headerlink" title="🎬 丰富的动画效果"></a>🎬 丰富的动画效果</h3><p>网站包含多种动画效果，提升用户体验：</p><ul><li>页面切换动画</li><li>文字动画效果</li><li>粒子动画背景</li><li>响应式设计，适配各种设备</li></ul><h2 id="技术栈"><a href="#技术栈" class="headerlink" title="技术栈"></a>技术栈</h2><ul><li><strong>Node.js</strong>: 运行环境</li><li><strong>Plop.js</strong>: 模板引擎和代码生成工具</li><li><strong>Handlebars</strong>: 前端源码模板系统</li><li><strong>YAML</strong>: 配置文件格式</li><li><strong>jQuery</strong>: 前端交互库</li><li><strong>FullPage.js</strong>: 全屏滚动效果</li><li><strong>CSS3</strong>: 样式和动画</li></ul><h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="1-环境准备"><a href="#1-环境准备" class="headerlink" title="1. 环境准备"></a>1. 环境准备</h3><p>确保你的系统已安装Node.js，然后克隆项目仓库：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/Aurorp1g/Happy_Birthday.git</span><br><span class="line"><span class="built_in">cd</span> Happy_Birthday</span><br></pre></td></tr></table></figure><h3 id="2-安装依赖"><a href="#2-安装依赖" class="headerlink" title="2. 安装依赖"></a>2. 安装依赖</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure><h3 id="3-自定义配置"><a href="#3-自定义配置" class="headerlink" title="3. 自定义配置"></a>3. 自定义配置</h3><p>编辑项目根目录下的<code>config.yaml</code>文件，根据提示修改相应配置：</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 基本信息</span></span><br><span class="line"><span class="attr">projectTitle:</span> <span class="string">&quot;生日快乐&quot;</span></span><br><span class="line"><span class="attr">userName:</span> <span class="string">&quot;亲爱的朋友&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 字体和动画配置</span></span><br><span class="line"><span class="attr">fontAnimation:</span> <span class="string">&quot;animate__fadeIn&quot;</span></span><br><span class="line"><span class="attr">fontColor:</span> <span class="string">&quot;#000000&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 音乐配置</span></span><br><span class="line"><span class="attr">music:</span> <span class="string">&quot;/templates/music/1.mp3&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 各屏幕配置</span></span><br><span class="line"><span class="attr">screens:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">id:</span> <span class="string">&quot;birthday_logo&quot;</span></span><br><span class="line">    <span class="attr">image:</span> <span class="string">&quot;/templates/img/HappyBirthday.png&quot;</span></span><br><span class="line">    <span class="attr">text:</span> <span class="string">&quot;生日快乐！&quot;</span></span><br><span class="line">  <span class="comment"># 更多屏幕配置...</span></span><br></pre></td></tr></table></figure><h3 id="4-生成网站"><a href="#4-生成网站" class="headerlink" title="4. 生成网站"></a>4. 生成网站</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 将构建配置文件重命名</span></span><br><span class="line"><span class="built_in">mv</span> plopfile.js.txt plopfile.js</span><br><span class="line"></span><br><span class="line"><span class="comment"># 生成静态网站文件</span></span><br><span class="line">npx plop g</span><br></pre></td></tr></table></figure><p>这将在<code>dist</code>目录下生成完整的静态网站文件。</p><h3 id="5-部署"><a href="#5-部署" class="headerlink" title="5. 部署"></a>5. 部署</h3><p>你可以将<code>dist</code>目录中的内容部署到任何静态网站托管服务，如GitHub Pages、Netlify或Vercel。</p><h2 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h2><p>这个框架非常适合以下场景：</p><ol><li><strong>为朋友创建个性化生日礼物</strong></li><li><strong>制作有意义的电子贺卡</strong></li><li><strong>创建纪念日网站</strong></li><li><strong>分享照片和回忆的数字相册</strong></li><li><strong>为特殊场合定制互动式网页</strong></li></ol><h2 id="高级自定义"><a href="#高级自定义" class="headerlink" title="高级自定义"></a>高级自定义</h2><p>如果你有一定的前端开发经验，还可以通过以下方式进行高级自定义：</p><ol><li><strong>修改模板文件</strong>：在<code>templates</code>目录下修改模板文件，以自定义网站的结构和内容。</li><li><strong>自定义CSS</strong>：编辑样式文件以更改网站外观</li><li><strong>添加新功能</strong>：扩展JavaScript代码添加新交互</li><li><strong>创建自定义动画</strong>：添加新的动画效果</li></ol><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>生日祝福静态网站生成框架是一个既实用又有趣的工具，它让创建个性化生日祝福网站变得简单而高效。无论是送给朋友还是家人，这样的礼物都充满了心意和创意。</p><p>如果你也喜欢这个项目，欢迎在GitHub上给它一个star，或者贡献你的代码和建议，让它变得更加完善！</p>]]></content>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;生日祝福静态网站生成框架&quot;&gt;&lt;a href=&quot;#生日祝福静态网站生成框架&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="前后端开发" scheme="https://aurorp1g.github.io/categories/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    
+    <category term="Daily Life" scheme="https://aurorp1g.github.io/tags/Daily-Life/"/>
+    
+  </entry>
   
   <entry>
     <title>指令集体系结构学习笔记</title>
@@ -475,29 +502,6 @@
     <category term="Study" scheme="https://aurorp1g.github.io/tags/Study/"/>
     
     <category term="Python" scheme="https://aurorp1g.github.io/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>密码数学竞赛笔记</title>
-    <link href="https://aurorp1g.github.io/posts/4d73e682.html"/>
-    <id>https://aurorp1g.github.io/posts/4d73e682.html</id>
-    <published>2025-05-19T02:24:56.000Z</published>
-    <updated>2025-09-15T10:36:38.538Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="密码数学竞赛笔记"><a href="#密码数学竞赛笔记" class="headerlink" title="密码数学竞赛笔记"></a>密码数学竞赛笔记</h1><blockquote><p>密码数学赛题2：<a href="http://www.cmsecc.com/xiazai/">前往下载</a></p></blockquote><h2 id="一-题目解析"><a href="#一-题目解析" class="headerlink" title="一. 题目解析"></a>一. 题目解析</h2><p>文档涉及的数学概念解释如下：</p><h3 id="1-整数模-m-剩余类环-mathbb-Z-m"><a href="#1-整数模-m-剩余类环-mathbb-Z-m" class="headerlink" title="1. 整数模 $ m $ 剩余类环 $\mathbb{Z}_m$"></a>1. <strong>整数模 $ m $ 剩余类环 $\mathbb{Z}_m$</strong></h3><ul><li><strong>定义</strong>：由整数模 $ m $ 的剩余类构成，即 $ \mathbb{Z}_m = {0, 1, \dots, m-1} $。  </li><li><strong>运算</strong>：加法和乘法均在模 $ m $ 下进行。例如，在 $ \mathbb{Z}_5 $ 中，$ 3 + 4 = 2 $（因为 $ 7 \mod 5 = 2 $）。  </li><li><strong>用途</strong>：密码学中常用于限制数值范围，确保计算在有限域内进行。</li></ul><h3 id="2-多项式环-mathbb-Z-m-X"><a href="#2-多项式环-mathbb-Z-m-X" class="headerlink" title="2. 多项式环 $ \mathbb{Z}_m[X] $"></a>2. <strong>多项式环 $ \mathbb{Z}_m[X] $</strong></h3><ul><li><strong>定义</strong>：系数属于 $ \mathbb{Z}<em>m $ 的多项式集合，例如 $ a(X) = a_0 + a_1X + \cdots + a</em>{n-1}X^{n-1} $，其中 $ a_i \in \mathbb{Z}_m $。  </li><li><strong>运算</strong>：多项式加法和乘法，系数运算遵循模 $ m $ 规则。</li></ul><h3 id="3-商环-R-m-f-mathbb-Z-m-X-f-X"><a href="#3-商环-R-m-f-mathbb-Z-m-X-f-X" class="headerlink" title="3. 商环 $ R_{m,f} = \mathbb{Z}_m[X]/(f(X)) $"></a>3. <strong>商环 $ R_{m,f} = \mathbb{Z}_m[X]/(f(X)) $</strong></h3><ul><li><strong>生成方式</strong>：取 $ \mathbb{Z}_m[X] $ 模去一个首一多项式 $ f(X) $ 生成的主理想 $ (f(X)) $。  </li><li><strong>元素表示</strong>：每个剩余类是次数小于 $ n $ 的多项式，例如 $ R<em>{m,f} $ 中的元素可表示为 $ a_0 + a_1X + \cdots + a</em>{n-1}X^{n-1} $。  </li><li><strong>同构映射 $ \Phi $</strong>：将多项式映射到其系数向量 $ (a<em>0, a_1, \dots, a</em>{n-1}) $，保持加法结构（Abel 群同构）。</li></ul><h3 id="4-2-范数与-∞-范数"><a href="#4-2-范数与-∞-范数" class="headerlink" title="4. 2-范数与 ∞-范数"></a>4. <strong>2-范数与 ∞-范数</strong></h3><ul><li><strong>定义</strong>：  <ul><li><strong>2-范数</strong>：对 $ a \in \mathbb{Z}_m^n $，找到整数向量 $ b $ 满足 $ \Pi(b) = a $，取 $ |b|_2 = \sqrt{\sum b_i^2} $ 的最小值。  </li><li><strong>∞-范数</strong>：类似地，取 $ |b|_\infty = \max |b_i| $ 的最小值。  </li></ul></li><li><strong>短多项式</strong>：范数较小的多项式，对应格密码中的“小错误”或“小密钥”，是安全性的核心。</li></ul><h3 id="5-RLWE问题"><a href="#5-RLWE问题" class="headerlink" title="5. RLWE问题"></a>5. <strong>RLWE问题</strong></h3><ul><li><strong>问题描述</strong>：给定环 $ R_{m,f} $、随机多项式 $ a(X) $ 和目标 $ t(X) $，求解 $ s(X) \in C $ 和短错误 $ e(X) $，使得：<br>[ t(X) = a(X) \cdot s(X) + e(X) \mod (f(X), m). ]  </li><li><strong>条件子集 $ C $</strong>：限制 $ s(X) $ 的范数或汉明权重（如 $ |s(X)|_2 &lt; 10 $ 或 $ wt(s(X)) \leq 3 $），增加问题难度。</li></ul><h3 id="6-MLWE问题"><a href="#6-MLWE问题" class="headerlink" title="6. MLWE问题"></a>6. <strong>MLWE问题</strong></h3><ul><li><strong>推广形式</strong>：使用矩阵和向量推广 RLWE。给定矩阵 $ A(X) \in R_{m,f}^{k \times l} $ 和目标向量 $ t(X) $，求解私密向量 $ s(X) \in C $ 和错误向量 $ e(X) $，使得：<br>[ t(X)^T = A(X) \cdot s(X)^T + e(X)^T \mod (f(X), m). ]  </li><li><strong>参数 $ (k, l) $</strong>：例如 Kyber 中 $ (k,l) = (2,2) $，不同安全级别对应不同维度。</li></ul><h3 id="7-NIST-后量子密码标准"><a href="#7-NIST-后量子密码标准" class="headerlink" title="7. NIST 后量子密码标准"></a>7. <strong>NIST 后量子密码标准</strong></h3><ul><li><strong>Kyber</strong>：基于 MLWE，参数为 $ q = 3329 $、$ n = 256 $、$ f(X) = X^{256} + 1 $。  </li><li><strong>Dilithium</strong>：基于 MLWE，模数更大（$ q = 8380417 $），适用于数字签名。  </li><li><strong>中心二项分布</strong>：生成短多项式（私钥和错误项），保证问题困难性。</li></ul><h3 id="8-主理想-a-X-R-q-的概率"><a href="#8-主理想-a-X-R-q-的概率" class="headerlink" title="8. 主理想 $ (a(X)) = R_q $ 的概率"></a>8. <strong>主理想 $ (a(X)) = R_q $ 的概率</strong></h3><ul><li><strong>条件</strong>：当且仅当 $ a(X) $ 在 $ R_q $ 中可逆。  </li><li><strong>计算</strong>：概率 $ p $ 取决于 $ R_q $ 中可逆元素的比例。对于 $ R_q = \mathbb{Z}_q[X]/(X^n + 1) $，若 $ q $ 为素数且 $ X^n + 1 $ 在 $ \mathbb{Z}_q $ 上可分解为不同不可约因子，则概率为 $ \phi(q^n)/q^n $，其中 $ \phi $ 为欧拉函数。</li></ul><h3 id="9-格密码与安全性"><a href="#9-格密码与安全性" class="headerlink" title="9. 格密码与安全性"></a>9. <strong>格密码与安全性</strong></h3><ul><li><strong>困难假设</strong>：RLWE/MLWE 的困难性基于格中最短向量问题（SVP）的难解性。  </li><li><strong>实际应用</strong>：短错误和私钥使得攻击者难以从 $ t(X) $ 中分离出 $ s(X) $ 和 $ e(X) $，保障后量子密码方案（如 Kyber、Dilithium）的安全性。</li></ul><h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><p>考题结合了抽象代数（环、理想、范数）与密码学（LWE 问题变种、后量子密码设计），核心是通过短多项式在环结构中的运算困难性构建安全方案。参赛者需深入理解这些概念，并设计算法求解特定条件下的 RLWE/MLWE 实例。</p>]]></content>
-    
-    
-    <summary type="html">⏳个人题解 - 第十届(2025)全国高校密码数学挑战赛赛题二</summary>
-    
-    
-    
-    <category term="Crypto" scheme="https://aurorp1g.github.io/categories/Crypto/"/>
-    
-    
-    <category term="Daily Life" scheme="https://aurorp1g.github.io/tags/Daily-Life/"/>
-    
-    <category term="Study" scheme="https://aurorp1g.github.io/tags/Study/"/>
     
   </entry>
   
