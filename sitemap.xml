@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://aurorp1g.github.io/laboratory/index.html</loc>
+    
+    <lastmod>2025-12-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://aurorp1g.github.io/personal/love/whisper/index.html</loc>
     
     <lastmod>2025-12-15</lastmod>
@@ -104,15 +113,6 @@
     <loc>https://aurorp1g.github.io/json/music.json</loc>
     
     <lastmod>2025-11-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://aurorp1g.github.io/laboratory/index.html</loc>
-    
-    <lastmod>2025-11-02</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
