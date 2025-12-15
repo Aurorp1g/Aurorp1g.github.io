@@ -2,6 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://aurorp1g.github.io/posts/2c8d9e3f.html</loc>
+    
+    <lastmod>2025-12-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://aurorp1g.github.io/posts/7a353d25.html</loc>
+    
+    <lastmod>2025-12-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://aurorp1g.github.io/posts/d9b2356c.html</loc>
+    
+    <lastmod>2025-12-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://aurorp1g.github.io/posts/b2d0ce5d.html</loc>
+    
+    <lastmod>2025-12-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://aurorp1g.github.io/posts/dfe83dcf.html</loc>
+    
+    <lastmod>2025-12-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://aurorp1g.github.io/laboratory/index.html</loc>
     
     <lastmod>2025-12-15</lastmod>
@@ -119,15 +164,6 @@
   </url>
   
   <url>
-    <loc>https://aurorp1g.github.io/posts/7a353d25.html</loc>
-    
-    <lastmod>2025-10-18</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://aurorp1g.github.io/json/footprint.json</loc>
     
     <lastmod>2025-10-15</lastmod>
@@ -182,15 +218,6 @@
   </url>
   
   <url>
-    <loc>https://aurorp1g.github.io/posts/d9b2356c.html</loc>
-    
-    <lastmod>2025-09-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://aurorp1g.github.io/posts/4d73e682.html</loc>
     
     <lastmod>2025-09-15</lastmod>
@@ -212,15 +239,6 @@
     <loc>https://aurorp1g.github.io/personal/about/index.html</loc>
     
     <lastmod>2025-09-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://aurorp1g.github.io/posts/b2d0ce5d.html</loc>
-    
-    <lastmod>2025-09-10</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -381,15 +399,6 @@
   
   <url>
     <loc>https://aurorp1g.github.io/posts/6f6343c5.html</loc>
-    
-    <lastmod>2025-09-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://aurorp1g.github.io/posts/dfe83dcf.html</loc>
     
     <lastmod>2025-09-04</lastmod>
     
@@ -631,6 +640,13 @@
   
   <url>
     <loc>https://aurorp1g.github.io/tags/%E5%A4%96%E6%8C%82%E6%A0%87%E7%AD%BE/</loc>
+    <lastmod>2025-12-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://aurorp1g.github.io/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/</loc>
     <lastmod>2025-12-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
