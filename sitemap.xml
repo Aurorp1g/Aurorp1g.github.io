@@ -11,6 +11,15 @@
   </url>
   
   <url>
+    <loc>https://aurorp1g.github.io/posts/4a17b156.html</loc>
+    
+    <lastmod>2025-12-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://aurorp1g.github.io/personal/love/projects/link/%E6%81%8B%E7%88%B1%E7%A1%AE%E8%AE%A4.html</loc>
     
     <lastmod>2025-12-17</lastmod>
@@ -497,15 +506,6 @@
   </url>
   
   <url>
-    <loc>https://aurorp1g.github.io/posts/4a17b156.html</loc>
-    
-    <lastmod>2025-09-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://aurorp1g.github.io/music/index.html</loc>
     
     <lastmod>2025-08-13</lastmod>
@@ -634,13 +634,6 @@
   </url>
   
   <url>
-    <loc>https://aurorp1g.github.io/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/</loc>
-    <lastmod>2025-12-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://aurorp1g.github.io/tags/Linux/</loc>
     <lastmod>2025-12-19</lastmod>
     <changefreq>weekly</changefreq>
@@ -649,6 +642,13 @@
   
   <url>
     <loc>https://aurorp1g.github.io/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</loc>
+    <lastmod>2025-12-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://aurorp1g.github.io/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/</loc>
     <lastmod>2025-12-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -699,14 +699,14 @@
   </url>
   
   <url>
-    <loc>https://aurorp1g.github.io/categories/Crypto/</loc>
+    <loc>https://aurorp1g.github.io/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</loc>
     <lastmod>2025-12-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://aurorp1g.github.io/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</loc>
+    <loc>https://aurorp1g.github.io/categories/Crypto/</loc>
     <lastmod>2025-12-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
