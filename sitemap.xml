@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://aurorp1g.github.io/json/music.json</loc>
+    <loc>https://aurorp1g.github.io/update/index.html</loc>
     
     <lastmod>2026-01-16</lastmod>
     
@@ -11,9 +11,9 @@
   </url>
   
   <url>
-    <loc>https://aurorp1g.github.io/update/index.html</loc>
+    <loc>https://aurorp1g.github.io/json/music.json</loc>
     
-    <lastmod>2026-01-15</lastmod>
+    <lastmod>2026-01-16</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -317,7 +317,7 @@
   </url>
   
   <url>
-    <loc>https://aurorp1g.github.io/posts/1b7675c2.html</loc>
+    <loc>https://aurorp1g.github.io/posts/32f07ba6.html</loc>
     
     <lastmod>2025-09-04</lastmod>
     
@@ -326,7 +326,7 @@
   </url>
   
   <url>
-    <loc>https://aurorp1g.github.io/posts/32f07ba6.html</loc>
+    <loc>https://aurorp1g.github.io/posts/1b7675c2.html</loc>
     
     <lastmod>2025-09-04</lastmod>
     
@@ -685,14 +685,14 @@
   </url>
   
   <url>
-    <loc>https://aurorp1g.github.io/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/</loc>
+    <loc>https://aurorp1g.github.io/categories/CTF/</loc>
     <lastmod>2026-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://aurorp1g.github.io/categories/CTF/</loc>
+    <loc>https://aurorp1g.github.io/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2026-01-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
