@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>2026寒假计划</title>
+      <link href="/posts/ec49fbc9.html"/>
+      <url>/posts/ec49fbc9.html</url>
+      
+        <content type="html"><![CDATA[<p>2026年寒假即将开始，这是一段宝贵的技术提升时光！今年寒假，我的目标是系统性地深入学习计算机科学的核心基础领域，重点聚焦于<strong>计算机组成与结构、现代操作系统、路由与交换技术、编译原理</strong>四大主题。通过理论与实践的结合，建立完整的计算机系统知识体系，并尝试自主开发一个新编程语言。</p><h3 id="学习计划"><a href="#学习计划" class="headerlink" title="学习计划"></a>学习计划</h3><h4 id="1-计算机组成与结构（硬件基础）"><a href="#1-计算机组成与结构（硬件基础）" class="headerlink" title="1. 计算机组成与结构（硬件基础）"></a>1. <strong>计算机组成与结构（硬件基础）</strong></h4><ul><li><strong>数字逻辑基础</strong>：深入理解布尔代数、逻辑门电路、组合逻辑与时序逻辑设计原理，掌握从晶体管到复杂计算系统的完整设计流程。</li><li><strong>处理器架构</strong>：学习指令集架构（ISA）、数据通路设计、流水线技术等核心概念，理解CPU如何执行指令和处理数据。</li><li><strong>存储器层次结构</strong>：掌握Cache原理、虚拟内存机制、存储系统优化技术，理解计算机存储系统的工作原理。</li><li><strong>输入输出系统</strong>：学习总线结构、中断机制、DMA传输技术，理解计算机与外部设备的交互方式。</li></ul><h4 id="2-现代操作系统（系统软件）"><a href="#2-现代操作系统（系统软件）" class="headerlink" title="2. 现代操作系统（系统软件）"></a>2. <strong>现代操作系统（系统软件）</strong></h4><ul><li><strong>进程与线程管理</strong>：深入理解进程调度算法、线程同步机制、死锁预防与检测技术，掌握操作系统如何管理程序执行。</li><li><strong>内存管理机制</strong>：学习分页与分段机制、页面替换算法、虚拟内存实现原理，理解操作系统如何高效管理内存资源。</li><li><strong>文件系统设计</strong>：掌握文件组织方式、磁盘调度算法、文件系统安全性机制，理解数据持久化存储的原理。</li><li><strong>设备管理技术</strong>：学习驱动程序架构、I/O子系统、中断处理机制，理解操作系统如何管理硬件设备。</li></ul><h4 id="3-路由与交换技术（网络核心）"><a href="#3-路由与交换技术（网络核心）" class="headerlink" title="3. 路由与交换技术（网络核心）"></a>3. <strong>路由与交换技术（网络核心）</strong></h4><ul><li><strong>网络基础理论</strong>：深入理解OSI七层模型、TCP/IP协议栈、网络拓扑结构，建立完整的网络知识体系。</li><li><strong>路由协议原理</strong>：学习RIP、OSPF、BGP等动态路由协议的原理与实现，掌握网络路径选择机制。</li><li><strong>交换网络技术</strong>：掌握VLAN、STP、链路聚合等交换网络技术，理解局域网通信原理。</li><li><strong>网络安全机制</strong>：学习ACL、防火墙、VPN等网络安全技术，保障网络通信的安全性。</li></ul><h4 id="4-编译原理与语言设计（软件基础）"><a href="#4-编译原理与语言设计（软件基础）" class="headerlink" title="4. 编译原理与语言设计（软件基础）"></a>4. <strong>编译原理与语言设计（软件基础）</strong></h4><ul><li><strong>词法分析与语法分析</strong>：学习正则表达式、有限自动机、上下文无关文法，掌握词法分析和语法分析的基本原理。</li><li><strong>语义分析与中间代码生成</strong>：理解语义分析的作用，学习类型检查、符号表管理，掌握中间代码生成技术。</li><li><strong>代码优化与目标代码生成</strong>：学习常见的代码优化技术，理解目标代码生成的过程和优化策略。</li><li><strong>运行时环境</strong>：掌握内存管理、垃圾回收、异常处理等运行时环境的设计原理。</li></ul><h3 id="实践项目"><a href="#实践项目" class="headerlink" title="实践项目"></a>实践项目</h3><h4 id="1-8位CPU设计与实现"><a href="#1-8位CPU设计与实现" class="headerlink" title="1. 8位CPU设计与实现"></a>1. <strong>8位CPU设计与实现</strong></h4><p>使用Verilog/SystemVerilog硬件描述语言设计一个简单的8位CPU，通过实践深入理解计算机硬件工作原理。该项目将包含以下核心模块：</p><ul><li><strong>算术逻辑单元（ALU）</strong>：实现基本的算术和逻辑运算功能</li><li><strong>寄存器文件</strong>：设计通用寄存器和专用寄存器，支持数据存储和传输</li><li><strong>控制单元</strong>：实现指令解码和执行控制逻辑</li><li><strong>存储器接口</strong>：设计CPU与内存的交互接口</li></ul><h4 id="2-微内核操作系统开发"><a href="#2-微内核操作系统开发" class="headerlink" title="2. 微内核操作系统开发"></a>2. <strong>微内核操作系统开发</strong></h4><p>基于x86架构实现一个简单的微内核操作系统，通过动手实践掌握操作系统内核开发技术。初步计划包括：</p><ul><li><strong>内核架构设计</strong>：采用微内核架构，设计核心服务模块</li><li><strong>进程管理模块</strong>：实现进程的创建、调度和销毁机制</li><li><strong>内存管理模块</strong>：实现基本的内存分配和回收功能</li><li><strong>系统调用接口</strong>：设计用户程序与内核的交互接口</li></ul><h4 id="3-复杂网络拓扑设计与配置"><a href="#3-复杂网络拓扑设计与配置" class="headerlink" title="3. 复杂网络拓扑设计与配置"></a>3. <strong>复杂网络拓扑设计与配置</strong></h4><p>使用GNS3或EVE-NG网络模拟器搭建复杂的网络拓扑环境，通过实际配置掌握路由与交换技术。项目内容包括：</p><ul><li><strong>多区域网络设计</strong>：设计包含多个子网的复杂网络拓扑</li><li><strong>动态路由配置</strong>：配置OSPF、BGP等动态路由协议实现网络互联</li><li><strong>交换网络优化</strong>：配置VLAN、STP等技术优化局域网性能</li><li><strong>网络安全策略</strong>：配置ACL、防火墙等安全机制保障网络通信</li></ul><h4 id="4-新编程语言csgo开发"><a href="#4-新编程语言csgo开发" class="headerlink" title="4. 新编程语言csgo开发"></a>4. <strong>新编程语言csgo开发</strong></h4><p>结合C++的高性能和Go语言的并发特性，开发一个名为”csgo”的新编程语言。该项目将全面应用编译原理知识，实现完整的语言编译器和运行时环境：</p><ul><li><strong>语言设计</strong>：设计简洁的语法，支持静态类型检查、函数式编程和并发编程特性</li><li><strong>词法分析器</strong>：使用C++实现高效的词法分析，支持Unicode字符集</li><li><strong>语法分析器</strong>：构建LL(1)或LR(1)语法分析器，生成抽象语法树</li><li><strong>语义分析</strong>：实现类型系统、作用域管理和符号表</li><li><strong>代码生成</strong>：生成中间代码，优化后转换为目标代码</li><li><strong>运行时环境</strong>：使用Go语言构建高效的垃圾回收器和并发调度器</li><li><strong>标准库</strong>：提供基础数据结构、网络编程和并发编程支持</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 琐记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Daily Life </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Yus Cipher - 全同态加密友好的流密码项目开发总结</title>
       <link href="/posts/2c8d9e3f.html"/>
       <url>/posts/2c8d9e3f.html</url>
@@ -752,9 +777,9 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> Study </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -833,9 +858,9 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> Study </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
@@ -914,9 +939,9 @@
       
         <tags>
             
-            <tag> Study </tag>
-            
             <tag> HTML </tag>
+            
+            <tag> Study </tag>
             
         </tags>
       
@@ -941,9 +966,9 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> Study </tag>
+            
+            <tag> Java </tag>
             
         </tags>
       
