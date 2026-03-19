@@ -13,18 +13,39 @@
       
       <categories>
           
-          <category> 应用程序开发 </category>
+          <category> 编程开发 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> HTML </tag>
+            <tag> 项目实战 </tag>
             
-            <tag> Python </tag>
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>一份给开源新手的 GitHub 贡献流程指南</title>
+      <link href="/posts/d46f7b89.html"/>
+      <url>/posts/d46f7b89.html</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>作为一名开发者，参与开源是提升技术、建立个人影响力的有效途径。但很多人，包括曾经的我，在刚接触时都会被 GitHub 的协作流程搞得一头雾水。</p><p>比如，什么是 <code>Fork</code>？ <code>Upstream</code> 和 <code>Origin</code> 又有什么区别？标准的贡献流程是怎样的？网上虽然有资料，但很少有一篇文章能为新手清晰地讲明白整个过程。</p><p>这篇文章的目的很明确：就是为那些想参与开源但对流程不熟悉的开发者，提供一份清晰、实用的操作手册。希望这篇总结能帮你扫清障碍，顺利迈出开源贡献的第一步。下面我们正式开始。</p></blockquote><h2 id="核心概念解析"><a href="#核心概念解析" class="headerlink" title="核心概念解析"></a>核心概念解析</h2><p>在动手操作之前，我们必须先理解几个关键的名词。搞清楚它们之间的关系，是顺利完成后续所有步骤的基础。</p><h3 id="Git-基础概念回顾"><a href="#Git-基础概念回顾" class="headerlink" title="Git 基础概念回顾"></a>Git 基础概念回顾</h3><p>首先，你需要对 Git 本身的工作流程有一个基本了解。下面这张图很经典地展示了 Git 的核心区域和操作：</p><p><img src="https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/Aurorp1g/CDN/img/202508241656520.png" alt="Git Workflow" style="width: 75%; max-width: 600px; height: auto; "></p><p>简单来说，你的日常工作就是：</p><ol><li>在 <strong>Workspace (工作区)</strong> 修改代码。</li><li>使用 <code>git add</code> 将修改内容暂存到 <strong>Index (暂存区)</strong>。</li><li>使用 <code>git commit</code> 将暂存区的内容提交到本地 <strong>Repository (仓库)</strong>，形成一个版本记录。</li><li>使用 <code>git push</code> 将本地仓库的提交推送到 <strong>Remote (远程仓库)</strong>，比如 GitHub。</li><li>使用 <code>git pull</code> 或 <code>git fetch</code> 从远程仓库拉取更新。</li></ol><p>对于这些基础命令的详细用法，阮一峰老师《常用 Git 命令清单》已经总结得非常全面，是很好的速查手册，本文不再赘述。</p><h3 id="GitHub-开源协作的概念"><a href="#GitHub-开源协作的概念" class="headerlink" title="GitHub 开源协作的概念"></a>GitHub 开源协作的概念</h3><p>上面提到的模型只涉及一个本地仓库和一个远程仓库。但在开源协作中，通常会涉及 <strong>三个仓库</strong>。下面这张图清晰地展示了它们关系：</p><p><img src="https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/Aurorp1g/CDN/img/202508241704135.png" alt="GitHub Collaboration" style="width: 75%; max-width: 600px; height: auto; "></p><p>让我们结合这张图，来理解几个最重要的概念：</p><ul><li><p><strong>Upstream (上游仓库)</strong></p><ul><li><strong>是什么</strong>：图中左上角的 “GitHub - Original”，也就是你想要贡献代码的那个 <strong>原始开源项目仓库</strong>。</li><li><strong>你的权限</strong>：你通常没有直接往这里 <code>push</code> 代码的权限。</li></ul></li><li><p><strong>Fork (你的个人复刻)</strong></p><ul><li><strong>是什么</strong>：图中右上角的 “GitHub - Fork”。这是你通过在原始项目页面上点击 “Fork” 按钮，在 <strong>你自己的 GitHub 账号下创建的一个完整的项目副本</strong>。</li><li><strong>你的权限</strong>：因为这个仓库在你的名下，所以你拥有全部的读写权限，可以随意 <code>push</code> 代码。这是你为开源项目贡献代码的”大本营”和”实验区”。</li></ul></li><li><p><strong>origin (你的远程仓库)</strong></p><ul><li><strong>是什么</strong>：简单来说，<code>origin</code> 是 Git 为你克隆的那个远程仓库地址起的一个 <strong>默认别名</strong>。</li><li><strong>如何创建</strong>：当你从 GitHub 克隆你的 Fork 仓库时，通过执行 <code>git clone [URL of YOUR FORK]</code> 这个命令，Git 会在你的本地仓库中 <strong>自动创建</strong> 这个名为 <code>origin</code> 的别名。你不需要任何手动设置。</li><li><strong>指向哪里</strong>：在我们的协作流程中，<code>origin</code> 这个别名指向的就是 <strong>你自己的 Fork 仓库</strong> (也就是图右上角的 “GitHub - Fork”)。</li><li><strong>作用</strong>：它是你 <code>push</code> 本地代码时的默认目标。当你执行 <code>git push</code> 时，你的代码变更就是通过 <code>origin</code> 这个别名，被推送到你自己的 Fork 仓库中。</li></ul></li><li><p><strong>upstream vs. origin 的关系</strong></p><ul><li><strong><code>origin</code></strong> 指向你自己的 Fork，是你 <strong>推送 (push) 代码</strong> 的地方。</li><li><strong><code>upstream</code></strong> 指向原始项目仓库，是你 <strong>同步最新代码 (fetch)</strong> 的地方。</li><li><strong>关键点</strong>：<code>origin</code> 是克隆时自动生成的，而 <code>upstream</code> 是需要我们 <strong>手动添加</strong> 的。这一步至关重要，它建立了你的本地仓库和原始项目之间的连接，让你能够随时获取项目的最新进展。</li></ul></li><li><p><strong>Pull Request (PR - 合并请求)</strong></p><ul><li><strong>是什么</strong>：当你觉得在自己 Fork 里的代码已经准备好，可以贡献给原始项目时，你就可以在 GitHub 上发起一个 Pull Request。</li><li><strong>作用</strong>：这是一个正式的请求，请求 <code>Upstream</code> (原始项目) 的维护者，把你 Fork 里的代码变更拉取 (Pull) 到他们的仓库中。这也是代码审查 (Code Review)、讨论和最终合并的地方。</li></ul></li></ul><p><strong>总结一下</strong>，整个流程的数据流是这样的：</p><ol><li><p><strong>初始化：从 <code>origin</code> 到本地</strong></p><ul><li>你首先 <code>clone</code> 的是你自己的 Fork 仓库 (<code>origin</code>)，把代码从你的 GitHub 仓库复制到本地电脑。</li></ul></li><li><p><strong>开发与同步：<code>upstream</code> -&gt; 本地 -&gt; <code>origin</code></strong></p><ul><li><strong>获取更新</strong>：你需要定期从 <code>upstream</code> (原始项目) <code>fetch</code> 或 <code>rebase</code> 最新的代码到本地。</li><li><strong>推送你的贡献</strong>：在本地开发完成后，你把代码 <code>push</code> 到 <code>origin</code> (你自己的 Fork)。</li></ul></li><li><p><strong>提交贡献：从 <code>origin</code> 到 <code>upstream</code></strong></p><ul><li>最后，你通过在 GitHub 上创建一个 Pull Request，请求 <code>upstream</code> (原始项目) 的维护者，来审核并合并你 <code>origin</code> (你的 Fork) 里的代码。</li></ul></li></ol><p>理解了这三个仓库和它们之间的关系，我们就已经扫清了最大的障碍。接下来，我们将进入实战环节。</p><hr><h2 id="首次贡献实战演练"><a href="#首次贡献实战演练" class="headerlink" title="首次贡献实战演练"></a>首次贡献实战演练</h2><p>理论知识已经储备完毕，现在让我们卷起袖子，完整地走一遍实际的贡献流程。我们会模拟为一个名为 <code>project-name</code> 的开源项目贡献代码。</p><h3 id="Step-1-Fork-拥有你自己的副本"><a href="#Step-1-Fork-拥有你自己的副本" class="headerlink" title="Step 1: Fork - 拥有你自己的副本"></a>Step 1: Fork - 拥有你自己的副本</h3><p>首先，你需要进入 <code>project-name</code> 的 GitHub 主页。在页面的右上角，你会看到一个 “Fork” 按钮。点击它，GitHub 就会在你的个人账号下创建一个该项目的完整副本。</p><p><img src="https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/Aurorp1g/CDN/img/2026-03-19%20162959.png" alt="Fork Button" style="width: 55%; max-width: 600px; height: auto; "></p><p>完成后，你的 GitHub 主页上就会出现一个 <code>your-username/project-name</code> 的仓库。这就是你的个人复刻 (Fork)。</p><h3 id="Step-2-Clone-将代码克隆到本地"><a href="#Step-2-Clone-将代码克隆到本地" class="headerlink" title="Step 2: Clone - 将代码克隆到本地"></a>Step 2: Clone - 将代码克隆到本地</h3><p>现在，你需要把你 Fork 的仓库克隆到你的电脑上进行开发。</p><p>进入你刚刚创建的 <code>your-username/project-name</code> 仓库页面，点击绿色的 “Code” 按钮，复制 HTTPS 或 SSH 链接。</p><p><img src="https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/Aurorp1g/CDN/img/2026-03-19%20162443.png" alt="Clone Code" style="width: 55%; max-width: 600px; height: auto; "></p><p>然后，在你的电脑终端中执行以下命令：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 确保将 YOUR-USERNAME 替换为你的 GitHub 用户名</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/YOUR-USERNAME/project-name.git</span><br></pre></td></tr></table></figure><p><strong>注意</strong>：这里克隆的是 <strong>你自己的 Fork 仓库地址</strong>，而不是原始项目的地址。这是非常关键的一步。</p><h3 id="Step-3-配置-upstream，建立与上游的连接"><a href="#Step-3-配置-upstream，建立与上游的连接" class="headerlink" title="Step 3: 配置 upstream，建立与上游的连接"></a>Step 3: 配置 upstream，建立与上游的连接</h3><p>为了能够随时获取原始项目的更新，我们需要在本地配置一个指向上游仓库 (<code>upstream</code>) 的远程地址。</p><p>首先，进入项目目录：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> project-name</span><br></pre></td></tr></table></figure><p>然后，添加 <code>upstream</code>：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 将 URL 替换为原始开源项目的 URL</span></span><br><span class="line">git remote add upstream https://github.com/original-owner/project-name.git</span><br></pre></td></tr></table></figure><p>我们可以用 <code>git remote -v</code> 命令来检查是否配置成功。你应该能看到类似下面的输出：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">origin    https://github.com/YOUR-USERNAME/project-name.git (fetch)</span><br><span class="line">origin    https://github.com/YOUR-USERNAME/project-name.git (push)</span><br><span class="line">upstream  https://github.com/original-owner/project-name.git (fetch)</span><br><span class="line">upstream  https://github.com/original-owner/project-name.git (push)</span><br></pre></td></tr></table></figure><p>看到 <code>origin</code> 和 <code>upstream</code> 同时存在，就说明配置成功了。</p><h3 id="Step-4-创建特性分支"><a href="#Step-4-创建特性分支" class="headerlink" title="Step 4: 创建特性分支"></a>Step 4: 创建特性分支</h3><p>在开始写代码之前，一个最佳实践是为你的新功能或修复创建一个独立的分支。这能确保你的 <code>master</code> 分支保持干净，并与上游项目同步。</p><p>首先，确保你的本地 <code>master</code> 分支是最新的：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git fetch upstream</span><br><span class="line">git checkout master</span><br><span class="line">git rebase upstream/master</span><br></pre></td></tr></table></figure><p>然后，从最新的 <code>master</code> 分支上创建一个新分支：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 把 my-feature-branch 换成一个有意义的名字，比如 fix-login-bug</span></span><br><span class="line">git checkout -b my-feature-branch</span><br></pre></td></tr></table></figure><p>现在，你就可以在这个新分支上安全地进行开发了。</p><h3 id="Step-5-开发与提交"><a href="#Step-5-开发与提交" class="headerlink" title="Step 5: 开发与提交"></a>Step 5: 开发与提交</h3><p>在这个分支上，你可以自由地修改代码、添加新文件、修复 Bug。完成一个阶段性的工作后，就进行一次 <code>commit</code>。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 1. 添加你的修改到暂存区</span></span><br><span class="line">git add .</span><br><span class="line"></span><br><span class="line"><span class="comment"># 2. 提交你的修改，并写下清晰的提交信息</span></span><br><span class="line">git commit -m <span class="string">&quot;feat: Implement user profile page&quot;</span></span><br></pre></td></tr></table></figure><h3 id="Step-6-保持同步，与上游代码对齐-可选但重要"><a href="#Step-6-保持同步，与上游代码对齐-可选但重要" class="headerlink" title="Step 6: 保持同步，与上游代码对齐 (可选但重要)"></a>Step 6: 保持同步，与上游代码对齐 (可选但重要)</h3><p>如果你的开发周期比较长，在你开发期间，<code>upstream</code> 可能已经合并了其他人的代码。为了避免提交 PR 时产生冲突，建议在推送前，先同步一次上游的最新代码。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git fetch upstream</span><br><span class="line">git rebase upstream/master</span><br></pre></td></tr></table></figure><p><code>rebase</code> 可以让你的提交历史保持一条直线，看起来更整洁。如果遇到冲突，你需要先解决冲突，然后继续 <code>rebase</code> 过程。</p><h3 id="Step-7-推送，将变更推送到你的-Fork"><a href="#Step-7-推送，将变更推送到你的-Fork" class="headerlink" title="Step 7: 推送，将变更推送到你的 Fork"></a>Step 7: 推送，将变更推送到你的 Fork</h3><p>当你在本地完成开发和提交后，就可以把你的特性分支推送到你自己的 Fork 仓库 (<code>origin</code>) 了。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push --set-upstream origin my-feature-branch</span><br></pre></td></tr></table></figure><p><code>--set-upstream</code> 参数只需要在第一次推送这个分支时使用，它会告诉 Git 你的本地分支 <code>my-feature-branch</code> 对应远程仓库 <code>origin</code> 的同名分支。</p><h3 id="Step-8-创建-Pull-Request"><a href="#Step-8-创建-Pull-Request" class="headerlink" title="Step 8: 创建 Pull Request"></a>Step 8: 创建 Pull Request</h3><p>推送成功后，现在回到你在 GitHub 上的 Fork 仓库页面。通常，GitHub 会自动检测到你推送了新的分支，并显示一个黄色的提示条，让你方便地创建 Pull Request。</p><p>点击 “Compare &amp; Pull Request” 按钮，你会进入 PR 创建页面。在这里，你需要：</p><ol><li><strong>填写一个清晰的标题</strong>：简明扼要地说明这个 PR 的作用。</li><li><strong>撰写详细的描述</strong>：解释你为什么要进行这些修改，解决了什么问题，以及你是如何实现的。如果项目有 PR 模板，请务必按照模板填写。</li></ol><p>确认无误后，点击 “Create pull request”。恭喜你，你的第一个 PR 已经成功提交了！</p><h3 id="Step-9-响应代码审查-Code-Review"><a href="#Step-9-响应代码审查-Code-Review" class="headerlink" title="Step 9: 响应代码审查 (Code Review)"></a>Step 9: 响应代码审查 (Code Review)</h3><p>提交 PR 只是开始，接下来你需要和项目维护者进行互动。</p><ol><li><strong>维护者留下评论</strong>：项目维护者会审查你的代码，并在可能有问题的地方留下评论 (Comment)。<br><img src="https://images.weserv.nl/?url=https://cdn.jsdelivr.net/gh/Aurorp1g/CDN/img/2026-03-19%20162725.png" alt="Code Review"></li></ol><ol><li><strong>回复与讨论</strong>：对于每一条评论，你都应该进行回复。</li><li><p><strong>修改代码并再次提交</strong>：</p><p>回到你的本地电脑，确保你还在之前的 <code>my-feature-branch</code> 分支上。根据讨论结果，直接修改代码。</p><p>修改完成后，创建一个新的 <code>commit</code>：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">&quot;fix: Address review comments from maintainer&quot;</span></span><br></pre></td></tr></table></figure><p><strong>重要</strong>：修改完成后，直接将新的提交推送到你的分支：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin my-feature-branch</span><br></pre></td></tr></table></figure><p>你 <strong>不需要</strong> 重新创建一个 PR。这次 <code>push</code> 会自动更新你之前提交的那个 PR。</p></li><li><p><strong>解决对话 (Resolve Conversation)</strong>：</p><p>当你认为你已经解决了某一条评论中的问题后，回到 PR 页面，找到对应的评论，点击 “Resolve conversation” 按钮。</p></li></ol><p>这个修改 -&gt; 推送 -&gt; 解决对话的循环可能会进行多次，直到所有问题都得到解决。</p><h3 id="Step-10-合并"><a href="#Step-10-合并" class="headerlink" title="Step 10: 合并"></a>Step 10: 合并</h3><p>当你的代码通过了所有审查，维护者就会点击 “Merge pull request” 按钮，将你的代码合并到主项目中。</p><p>至此，你的代码就正式成为了开源项目的一部分！</p><hr><h2 id="保持更新，如何为下一次贡献做准备"><a href="#保持更新，如何为下一次贡献做准备" class="headerlink" title="保持更新，如何为下一次贡献做准备"></a>保持更新，如何为下一次贡献做准备</h2><p>恭喜你！在完成了一次 PR 合并后，你已经是一位正式的开源贡献者了。但工作还没结束。</p><h3 id="为什么需要同步你的-Fork"><a href="#为什么需要同步你的-Fork" class="headerlink" title="为什么需要同步你的 Fork"></a>为什么需要同步你的 Fork</h3><p>在你完成一次贡献后，原始项目 (<code>upstream</code>) 的 <code>master</code> 分支因为合并了你的 PR 和其他人的代码，已经向前更新了。而你自己的 Fork 和本地仓库的 <code>master</code> 分支，还停留在你开始工作时的旧位置。</p><p><strong>在开始下一次贡献前，保持你的 <code>master</code> 分支与 <code>upstream</code> 完全同步，是一个至关重要的好习惯。</strong></p><h3 id="两步完成同步"><a href="#两步完成同步" class="headerlink" title="两步完成同步"></a>两步完成同步</h3><h4 id="第一步：更新你的本地仓库"><a href="#第一步：更新你的本地仓库" class="headerlink" title="第一步：更新你的本地仓库"></a>第一步：更新你的本地仓库</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 切换到主分支</span></span><br><span class="line">git checkout master</span><br><span class="line"></span><br><span class="line"><span class="comment"># 从上游拉取最新变更</span></span><br><span class="line">git fetch upstream</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将本地 master 同步到上游 master</span></span><br><span class="line">git rebase upstream/master</span><br></pre></td></tr></table></figure><h4 id="第二步：更新你在-GitHub-上的-Fork"><a href="#第二步：更新你在-GitHub-上的-Fork" class="headerlink" title="第二步：更新你在 GitHub 上的 Fork"></a>第二步：更新你在 GitHub 上的 Fork</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin master</span><br></pre></td></tr></table></figure><p>现在，你的 <strong>本地仓库</strong> 和 <strong>GitHub 上的 Fork</strong> 都和上游项目完全同步了。</p><hr><h2 id="常用命令速查清单-Cheat-Sheet"><a href="#常用命令速查清单-Cheat-Sheet" class="headerlink" title="常用命令速查清单 (Cheat Sheet)"></a>常用命令速查清单 (Cheat Sheet)</h2><h3 id="首次设置-为一个新项目贡献时，仅需一次"><a href="#首次设置-为一个新项目贡献时，仅需一次" class="headerlink" title="首次设置 (为一个新项目贡献时，仅需一次)"></a>首次设置 (为一个新项目贡献时，仅需一次)</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 1. 克隆你自己的 Fork 仓库到本地</span></span><br><span class="line">git <span class="built_in">clone</span> [URL of YOUR FORK]</span><br><span class="line"><span class="built_in">cd</span> [project-name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 2. 添加原始项目仓库为 upstream</span></span><br><span class="line">git remote add upstream [URL of ORIGINAL REPO]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 3. 验证远程仓库设置是否成功</span></span><br><span class="line">git remote -v</span><br></pre></td></tr></table></figure><h3 id="一个完整的开发周期"><a href="#一个完整的开发周期" class="headerlink" title="一个完整的开发周期"></a>一个完整的开发周期</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># === 准备阶段 ===</span></span><br><span class="line"><span class="comment"># 1. 切换到主分支</span></span><br><span class="line">git checkout master</span><br><span class="line"></span><br><span class="line"><span class="comment"># 2. 与上游 master 分支保持同步</span></span><br><span class="line">git fetch upstream</span><br><span class="line">git rebase upstream/master</span><br><span class="line"></span><br><span class="line"><span class="comment"># 3. 从最新的 master 分支创建你的特性分支</span></span><br><span class="line">git checkout -b [my-new-feature-branch]</span><br><span class="line"></span><br><span class="line"><span class="comment"># === 开发阶段 ===</span></span><br><span class="line"><span class="comment"># ... 在这里进行代码的修改、添加、删除 ...</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 1. 添加变更到暂存区</span></span><br><span class="line">git add .</span><br><span class="line"></span><br><span class="line"><span class="comment"># 2. 提交变更</span></span><br><span class="line">git commit -m <span class="string">&quot;feat: Add a new amazing feature&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># === 提交阶段 ===</span></span><br><span class="line"><span class="comment"># 1. (可选但推荐) 在推送前，再次与上游同步，避免冲突</span></span><br><span class="line">git fetch upstream</span><br><span class="line">git rebase upstream/master</span><br><span class="line"></span><br><span class="line"><span class="comment"># 2. 将你的分支推送到你自己的 Fork 仓库 (origin)</span></span><br><span class="line"><span class="comment"># 第一次推送时使用 --set-upstream</span></span><br><span class="line">git push --set-upstream origin [my-new-feature-branch]</span><br></pre></td></tr></table></figure><h3 id="响应代码审查-Review-后修改代码"><a href="#响应代码审查-Review-后修改代码" class="headerlink" title="响应代码审查 (Review 后修改代码)"></a>响应代码审查 (Review 后修改代码)</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 确保你还在你的特性分支上</span></span><br><span class="line"><span class="comment"># ... 直接修改代码 ...</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 1. 提交你的修改</span></span><br><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">&quot;fix: Address review comments&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 2. 再次推送到你的分支，PR会自动更新</span></span><br><span class="line">git push origin [my-new-feature-branch]</span><br></pre></td></tr></table></figure><h3 id="贡献完成后，保持-Fork-更新-为下一次贡献做准备"><a href="#贡献完成后，保持-Fork-更新-为下一次贡献做准备" class="headerlink" title="贡献完成后，保持 Fork 更新 (为下一次贡献做准备)"></a>贡献完成后，保持 Fork 更新 (为下一次贡献做准备)</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 1. 切换到主分支</span></span><br><span class="line">git checkout master</span><br><span class="line"></span><br><span class="line"><span class="comment"># 2. 拉取上游的最新代码</span></span><br><span class="line">git fetch upstream</span><br><span class="line"></span><br><span class="line"><span class="comment"># 3. 将本地 master 更新到最新</span></span><br><span class="line">git rebase upstream/master</span><br><span class="line"></span><br><span class="line"><span class="comment"># 4. 将这个最新的 master 分支推送到你自己的 Fork</span></span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure><hr><h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>到这里，我们已经完整地走完了在 GitHub 上参与一个开源项目的全过程。</p><p>整个流程可以被总结为一条清晰的路径：</p><p><strong>Fork -&gt; Clone -&gt; Branch -&gt; Develop -&gt; Push -&gt; PR</strong></p><p>开源贡献的流程并不复杂，最重要的，是勇敢地迈出第一步。</p><p>希望这篇文章能成为你开启开源之旅的得力助手。现在，就去寻找一个你感兴趣的项目，提交你的第一个 PR 吧！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 开发工具 </category>
+          
+      </categories>
+      
+      
+        <tags>
             
-            <tag> 校园网 </tag>
+            <tag> 教程 </tag>
             
         </tags>
       
@@ -42,14 +63,14 @@
       
       <categories>
           
-          <category> 琐记 </category>
+          <category> 生活随笔 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Daily Life </tag>
+            <tag> 生活 </tag>
             
         </tags>
       
@@ -74,9 +95,7 @@
       
         <tags>
             
-            <tag> Study </tag>
-            
-            <tag> 密码学 </tag>
+            <tag> 项目实战 </tag>
             
         </tags>
       
@@ -94,14 +113,14 @@
       
       <categories>
           
-          <category> 前后端开发 </category>
+          <category> 编程开发 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Daily Life </tag>
+            <tag> 项目实战 </tag>
             
         </tags>
       
@@ -119,14 +138,14 @@
       
       <categories>
           
-          <category> 操作系统 </category>
+          <category> 系统基础 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 操作系统 </tag>
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -151,7 +170,7 @@
       
         <tags>
             
-            <tag> Study </tag>
+            <tag> 工具 </tag>
             
         </tags>
       
@@ -176,9 +195,11 @@
       
         <tags>
             
-            <tag> Study </tag>
-            
             <tag> 密码学 </tag>
+            
+            <tag> CTF </tag>
+            
+            <tag> WriteUp </tag>
             
         </tags>
       
@@ -203,7 +224,11 @@
       
         <tags>
             
-            <tag> Study </tag>
+            <tag> 竞赛 </tag>
+            
+            <tag> CTF </tag>
+            
+            <tag> WriteUp </tag>
             
         </tags>
       
@@ -228,9 +253,9 @@
       
         <tags>
             
-            <tag> Study </tag>
-            
             <tag> 密码学 </tag>
+            
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -255,7 +280,7 @@
       
         <tags>
             
-            <tag> Study </tag>
+            <tag> 工具 </tag>
             
         </tags>
       
@@ -280,11 +305,9 @@
       
         <tags>
             
-            <tag> Study </tag>
-            
-            <tag> Python </tag>
-            
             <tag> 密码学 </tag>
+            
+            <tag> 竞赛 </tag>
             
         </tags>
       
@@ -302,14 +325,14 @@
       
       <categories>
           
-          <category> 操作系统 </category>
+          <category> 系统基础 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 操作系统 </tag>
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -327,14 +350,14 @@
       
       <categories>
           
-          <category> 应用程序开发 </category>
+          <category> CTF </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Daily Life </tag>
+            <tag> 项目实战 </tag>
             
         </tags>
       
@@ -352,14 +375,14 @@
       
       <categories>
           
-          <category> CTF </category>
+          <category> 系统基础 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Study </tag>
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -377,16 +400,14 @@
       
       <categories>
           
-          <category> 应用程序开发 </category>
+          <category> 编程开发 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Study </tag>
-            
-            <tag> Python </tag>
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -404,16 +425,16 @@
       
       <categories>
           
-          <category> 前后端开发 </category>
+          <category> CTF </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Study </tag>
+            <tag> 学习笔记 </tag>
             
-            <tag> 外挂标签 </tag>
+            <tag> 安全 </tag>
             
         </tags>
       
@@ -438,9 +459,7 @@
       
         <tags>
             
-            <tag> Daily Life </tag>
-            
-            <tag> Study </tag>
+            <tag> 工具 </tag>
             
         </tags>
       
@@ -458,14 +477,14 @@
       
       <categories>
           
-          <category> 前后端开发 </category>
+          <category> 编程开发 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Study </tag>
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -483,16 +502,14 @@
       
       <categories>
           
-          <category> 应用程序开发 </category>
+          <category> 编程开发 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Daily Life </tag>
-            
-            <tag> Study </tag>
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -510,14 +527,14 @@
       
       <categories>
           
-          <category> 琐记 </category>
+          <category> 生活随笔 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Daily Life </tag>
+            <tag> 生活 </tag>
             
         </tags>
       
@@ -535,14 +552,14 @@
       
       <categories>
           
-          <category> 琐记 </category>
+          <category> 生活随笔 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Daily Life </tag>
+            <tag> 生活 </tag>
             
         </tags>
       
@@ -560,14 +577,14 @@
       
       <categories>
           
-          <category> 琐记 </category>
+          <category> 生活随笔 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Daily Life </tag>
+            <tag> 生活 </tag>
             
         </tags>
       
@@ -585,18 +602,14 @@
       
       <categories>
           
-          <category> 琐记 </category>
+          <category> 编程开发 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Daily Life </tag>
-            
-            <tag> Study </tag>
-            
-            <tag> Python </tag>
+            <tag> 项目实战 </tag>
             
         </tags>
       
@@ -621,9 +634,9 @@
       
         <tags>
             
-            <tag> Daily Life </tag>
+            <tag> 密码学 </tag>
             
-            <tag> Study </tag>
+            <tag> 竞赛 </tag>
             
         </tags>
       
@@ -641,14 +654,14 @@
       
       <categories>
           
-          <category> 琐记 </category>
+          <category> 生活随笔 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Daily Life </tag>
+            <tag> 生活 </tag>
             
         </tags>
       
@@ -666,14 +679,14 @@
       
       <categories>
           
-          <category> Coding </category>
+          <category> 编程开发 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Study </tag>
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -691,18 +704,14 @@
       
       <categories>
           
-          <category> 操作系统 </category>
+          <category> 系统基础 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Study </tag>
-            
-            <tag> Linux </tag>
-            
-            <tag> 操作系统 </tag>
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -720,16 +729,16 @@
       
       <categories>
           
-          <category> 琐记 </category>
+          <category> Crypto </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Daily Life </tag>
-            
             <tag> 密码学 </tag>
+            
+            <tag> 竞赛 </tag>
             
         </tags>
       
@@ -747,14 +756,14 @@
       
       <categories>
           
-          <category> 琐记 </category>
+          <category> 编程开发 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Daily Life </tag>
+            <tag> 项目实战 </tag>
             
         </tags>
       
@@ -772,16 +781,14 @@
       
       <categories>
           
-          <category> Coding </category>
+          <category> 编程开发 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Study </tag>
-            
-            <tag> Python </tag>
+            <tag> 项目实战 </tag>
             
         </tags>
       
@@ -799,16 +806,14 @@
       
       <categories>
           
-          <category> Coding </category>
+          <category> 编程开发 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Java </tag>
-            
-            <tag> Study </tag>
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -821,7 +826,7 @@
       <link href="/posts/1fc0b91f.html"/>
       <url>/posts/1fc0b91f.html</url>
       
-        <content type="html"><![CDATA[<h1 id="vscode优化使用体验篇（设置-插件）"><a href="#vscode优化使用体验篇（设置-插件）" class="headerlink" title="vscode优化使用体验篇（设置 | 插件）"></a>vscode优化使用体验篇（设置 | 插件）</h1><blockquote><p>众所周知，vscode是一个非常好用的文本编辑器，通过各式各样的插件几乎是万能的，也可以作为好用的IDE，但vscode有很多默认不开启的、个人认为非常好用的一些设置，因此，在这里与大家分享，同时也推荐几个好用的插件。</p></blockquote><hr><p>vscode官网：<a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></p><h2 id="settings-json"><a href="#settings-json" class="headerlink" title="settings.json"></a>settings.json</h2><blockquote><p>打开vscode，按下<code>Ctrl+Shift+P</code>，输入<code>settings.json</code>，点击<code>首选项：打开用户设置（JSON）</code>，即可打开<code>settings.json</code>文件，在其中添加以下代码即可。<br><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;files.autoSave&quot;</span><span class="punctuation">:</span> <span class="string">&quot;afterDelay&quot;</span><span class="punctuation">,</span>  <span class="comment">// 自动保存</span></span><br><span class="line">  <span class="attr">&quot;files.autoGuessEncoding&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span> <span class="comment">// 自动识别编码</span></span><br><span class="line">  <span class="attr">&quot;editor.cursorBlinking&quot;</span><span class="punctuation">:</span> <span class="string">&quot;smooth&quot;</span><span class="punctuation">,</span>  <span class="comment">// 光标闪烁</span></span><br><span class="line">  <span class="attr">&quot;editor.formatOnPaste&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span>  <span class="comment">// 粘贴时自动格式化</span></span><br><span class="line">  <span class="attr">&quot;editor.formatOnType&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span>  <span class="comment">// 键入时自动格式化</span></span><br><span class="line">  <span class="attr">&quot;editor.formatOnSave&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span>  <span class="comment">// 保存时自动格式化</span></span><br><span class="line">  <span class="attr">&quot;editor.wordWrap&quot;</span><span class="punctuation">:</span> <span class="string">&quot;on&quot;</span><span class="punctuation">,</span>  <span class="comment">// 单行内容过长自动换行</span></span><br><span class="line">  <span class="attr">&quot;editor.guides.bracketPairs&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span>  <span class="comment">// 括号匹配</span></span><br><span class="line">  <span class="attr">&quot;editor.acceptSuggestionOnEnter&quot;</span><span class="punctuation">:</span> <span class="string">&quot;smart&quot;</span><span class="punctuation">,</span>  <span class="comment">// 智能回车</span></span><br><span class="line">  <span class="attr">&quot;editor.suggestSelection&quot;</span><span class="punctuation">:</span> <span class="string">&quot;recentlyUsed&quot;</span><span class="punctuation">,</span>  <span class="comment">// 智能补全</span></span><br><span class="line">  <span class="attr">&quot;window.dialogStyle&quot;</span><span class="punctuation">:</span> <span class="string">&quot;custom&quot;</span><span class="punctuation">,</span>  <span class="comment">// 弹窗样式</span></span><br><span class="line">  <span class="attr">&quot;debug.showBreakpointsInOverviewRuler&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span>  <span class="comment">// 断点显示在概览栏</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure></p></blockquote><h2 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h2><blockquote><p>打开vscode，按下<code>Ctrl+Shift+X</code>，输入<code>插件</code>，点击<code>安装</code>，即可安装插件。<br>以下是一些常用的插件，大家可以根据自己的需要安装。</p></blockquote><h3 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h3><p>1.One Dark Pro</p><blockquote><p>一个非常好看的主题，同时也支持暗色模式。</p></blockquote><p><img src="https://images.weserv.nl/?url=https://jsd.liiiu.cn/gh/Aurorp1g/CDN/img/1fc0b91f_1.png" alt=""></p><p>2.GitHub Theme</p><blockquote><p>GitHub 的官方主题</p></blockquote><p><img src="https://images.weserv.nl/?url=https://jsd.liiiu.cn/gh/Aurorp1g/CDN/img/1fc0b91f_2.png" alt=""></p><p>3.Dracula Official</p><blockquote><p>一款很有特点的吸血鬼主题</p></blockquote><p><img src="https://images.weserv.nl/?url=https://jsd.liiiu.cn/gh/Aurorp1g/CDN/img/1fc0b91f_3.png" alt=""></p><h3 id="图标主题"><a href="#图标主题" class="headerlink" title="图标主题"></a>图标主题</h3><p>1.Material Icon Theme</p><blockquote><p>个人正在用的图标主题，好看，类型大而全</p></blockquote><p><img src="https://images.weserv.nl/?url=https://jsd.liiiu.cn/gh/Aurorp1g/CDN/img/1fc0b91f_4.png" alt=""></p><p>2.vscode-icons</p><blockquote><p>也是一款不错的图标主题</p></blockquote><p><img src="https://images.weserv.nl/?url=https://jsd.liiiu.cn/gh/Aurorp1g/CDN/img/1fc0b91f_5.png" alt=""></p><h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><p>1.Vibrancy Continued</p><blockquote><p>使vscode背景高斯模糊，非常吃性能（慎用</p></blockquote><p>使用方法：按F1或者ctrl+shift+p，键入Reload Vibrancy，然后重启vscode</p><p>取消方法：按F1或者ctrl+shift+p，键入Disable Vibrancy，然后重启vscode</p><p><img src="https://images.weserv.nl/?url=https://jsd.liiiu.cn/gh/Aurorp1g/CDN/img/1fc0b91f_6.png" alt=""></p><p>2.background</p><blockquote><p>可以设置背景图片，非常好用</p></blockquote><p><img src="https://images.weserv.nl/?url=https://jsd.liiiu.cn/gh/Aurorp1g/CDN/img/1fc0b91f_0.png" alt=""></p><blockquote><p>需要在settings.json中修改成以下代码（file:///你自己背景图片的路径）</p></blockquote><p><img src="https://images.weserv.nl/?url=https://jsd.liiiu.cn/gh/Aurorp1g/CDN/img/1fc0b91f_code.png" alt=""></p><h3 id="基础功能类"><a href="#基础功能类" class="headerlink" title="基础功能类"></a>基础功能类</h3><p>1.Chinese (Simplified) (简体中文)</p><blockquote><p>【中文语言包】这应该不用多介绍，是vscode的官方中文语言包</p></blockquote><p><img src="https://images.weserv.nl/?url=https://jsd.liiiu.cn/gh/Aurorp1g/CDN/img/1fc0b91f_7.png" alt=""></p><p>2.Error Lens</p><blockquote><p>【错误提示】可以将原先显示的问题显示在对应行右侧并高亮</p></blockquote><p><img src="https://images.weserv.nl/?url=https://jsd.liiiu.cn/gh/Aurorp1g/CDN/img/1fc0b91f_8.png" alt=""></p><p>3.Path Intellisense</p><blockquote><p>【路径补全】在输入路径时，有智能提示补全</p></blockquote><p><img src="https://images.weserv.nl/?url=https://jsd.liiiu.cn/gh/Aurorp1g/CDN/img/1fc0b91f_9.png" alt=""></p><p>4.Image preview</p><blockquote><p>【图像预览】可以预览引入的图像</p></blockquote><p><img src="https://images.weserv.nl/?url=https://jsd.liiiu.cn/gh/Aurorp1g/CDN/img/1fc0b91f_10.png" alt=""></p><h3 id="拓展功能类"><a href="#拓展功能类" class="headerlink" title="拓展功能类"></a>拓展功能类</h3><p>1.CodeSnap</p><blockquote><p>【代码截图】一款非常好用的代码截图插件</p></blockquote><p><img src="https://images.weserv.nl/?url=https://jsd.liiiu.cn/gh/Aurorp1g/CDN/img/1fc0b91f_11.png" alt=""></p><p>2.Prettier - Code formatter</p><blockquote><p>【代码格式化工具】支持超多语言，一键格式化，美化代码格式</p></blockquote><p><img src="https://images.weserv.nl/?url=https://jsd.liiiu.cn/gh/Aurorp1g/CDN/img/1fc0b91f_12.png" alt=""></p><p>3.GBK to UTF8 for vscode</p><blockquote><p>【文件编码转化】可以将文件在GBK与UTF8编码之间无瑕转换</p></blockquote><p><img src="https://images.weserv.nl/?url=https://jsd.liiiu.cn/gh/Aurorp1g/CDN/img/1fc0b91f_13.png" alt=""></p><p>4.Hex Editor</p><blockquote><p>用来查看文件的hex或UTF-8编码</p></blockquote><p><img src="https://images.weserv.nl/?url=https://jsd.liiiu.cn/gh/Aurorp1g/CDN/img/1fc0b91f_14.png" alt=""></p><p>5.Doxygen Documentation Generator</p><blockquote><p>【文档生成器】写注释和文档时非常好用</p></blockquote><p><img src="https://images.weserv.nl/?url=https://jsd.liiiu.cn/gh/Aurorp1g/CDN/img/1fc0b91f_15.png" alt=""></p><p>6.Remote - SSH</p><blockquote><p>【ssh连接】连接远程服务器或虚拟机</p></blockquote><p><img src="https://images.weserv.nl/?url=https://jsd.liiiu.cn/gh/Aurorp1g/CDN/img/1fc0b91f_16.png" alt=""></p><p>7.Hungry Delete</p><blockquote><p>【像IDEA的退格键】删除整个空格或制表符块，并减少程序员按退格键所需的时间</p></blockquote><p><img src="https://images.weserv.nl/?url=https://jsd.liiiu.cn/gh/Aurorp1g/CDN/img/1fc0b91f_17.png" alt=""></p><h3 id="算法练习类"><a href="#算法练习类" class="headerlink" title="算法练习类"></a>算法练习类</h3><p>1.Code Runner</p><blockquote><p>【代码运行工具】支持多种语言，语言运行环境需自己配置</p></blockquote><p><img src="https://images.weserv.nl/?url=https://jsd.liiiu.cn/gh/Aurorp1g/CDN/img/1fc0b91f_18.png" alt=""></p><p>推荐修改配置：<br><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;code-runner.runInTerminal&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;code-runner.saveAllFilesBeforeRun&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;code-runner.saveFileBeforeRun&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure></p><p>2.Competitive Programming Helper (cph)</p><blockquote><p>刷算法题时很好用，可以自己设置样例，一键全部运行</p></blockquote><p><img src="https://images.weserv.nl/?url=https://jsd.liiiu.cn/gh/Aurorp1g/CDN/img/1fc0b91f_19.png" alt=""></p><h2 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h2><blockquote><p>以上是我个人的一些设置，大家可以根据自己的需要进行修改，同时也推荐大家安装一些插件，提高自己的开发效率。<br>最后，希望大家都能在vscode中找到自己的风格。  </p></blockquote>]]></content>
+        <content type="html"><![CDATA[<h1 id="vscode优化使用体验篇（设置-插件）"><a href="#vscode优化使用体验篇（设置-插件）" class="headerlink" title="vscode优化使用体验篇（设置 | 插件）"></a>vscode优化使用体验篇（设置 | 插件）</h1><blockquote><p>众所周知，vscode是一个非常好用的文本编辑器，通过各式各样的插件几乎是万能的，也可以作为好用的IDE，但vscode有很多默认不开启的、个人认为非常好用的一些设置，因此，在这里与大家分享，同时也推荐几个好用的插件。</p></blockquote><hr><p>vscode官网：<a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></p><h2 id="settings-json"><a href="#settings-json" class="headerlink" title="settings.json"></a>settings.json</h2><blockquote><p>打开vscode，按下<code>Ctrl+Shift+P</code>，输入<code>settings.json</code>，点击<code>首选项：打开用户设置（JSON）</code>，即可打开<code>settings.json</code>文件，在其中添加以下代码即可。<br><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;files.autoSave&quot;</span><span class="punctuation">:</span> <span class="string">&quot;afterDelay&quot;</span><span class="punctuation">,</span>  <span class="comment">// 自动保存</span></span><br><span class="line">  <span class="attr">&quot;files.autoGuessEncoding&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span> <span class="comment">// 自动识别编码</span></span><br><span class="line">  <span class="attr">&quot;editor.cursorBlinking&quot;</span><span class="punctuation">:</span> <span class="string">&quot;smooth&quot;</span><span class="punctuation">,</span>  <span class="comment">// 光标闪烁</span></span><br><span class="line">  <span class="attr">&quot;editor.formatOnPaste&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span>  <span class="comment">// 粘贴时自动格式化</span></span><br><span class="line">  <span class="attr">&quot;editor.formatOnType&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span>  <span class="comment">// 键入时自动格式化</span></span><br><span class="line">  <span class="attr">&quot;editor.formatOnSave&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span>  <span class="comment">// 保存时自动格式化</span></span><br><span class="line">  <span class="attr">&quot;editor.wordWrap&quot;</span><span class="punctuation">:</span> <span class="string">&quot;on&quot;</span><span class="punctuation">,</span>  <span class="comment">// 单行内容过长自动换行</span></span><br><span class="line">  <span class="attr">&quot;editor.guides.bracketPairs&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span>  <span class="comment">// 括号匹配</span></span><br><span class="line">  <span class="attr">&quot;editor.acceptSuggestionOnEnter&quot;</span><span class="punctuation">:</span> <span class="string">&quot;smart&quot;</span><span class="punctuation">,</span>  <span class="comment">// 智能回车</span></span><br><span class="line">  <span class="attr">&quot;editor.suggestSelection&quot;</span><span class="punctuation">:</span> <span class="string">&quot;recentlyUsed&quot;</span><span class="punctuation">,</span>  <span class="comment">// 智能补全</span></span><br><span class="line">  <span class="attr">&quot;window.dialogStyle&quot;</span><span class="punctuation">:</span> <span class="string">&quot;custom&quot;</span><span class="punctuation">,</span>  <span class="comment">// 弹窗样式</span></span><br><span class="line">  <span class="attr">&quot;debug.showBreakpointsInOverviewRuler&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span>  <span class="comment">// 断点显示在概览栏</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure></p></blockquote><h2 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h2><blockquote><p>打开vscode，按下<code>Ctrl+Shift+X</code>，输入<code>插件</code>，点击<code>安装</code>，即可安装插件。<br>以下是一些常用的插件，大家可以根据自己的需要安装。</p></blockquote><h3 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h3><p>1.One Dark Pro</p><blockquote><p>一个非常好看的主题，同时也支持暗色模式。</p></blockquote><p><img src="https://images.weserv.nl/?url=https://jsd.liiiu.cn/gh/Aurorp1g/CDN/img/1fc0b91f_1.png" alt=""></p><p>2.GitHub Theme</p><blockquote><p>GitHub 的官方主题</p></blockquote><p><img src="https://images.weserv.nl/?url=https://jsd.liiiu.cn/gh/Aurorp1g/CDN/img/1fc0b91f_2.png" alt=""></p><p>3.Dracula Official</p><blockquote><p>一款很有特点的吸血鬼主题</p></blockquote><p><img src="https://images.weserv.nl/?url=https://jsd.liiiu.cn/gh/Aurorp1g/CDN/img/1fc0b91f_3.png" alt=""></p><h3 id="图标主题"><a href="#图标主题" class="headerlink" title="图标主题"></a>图标主题</h3><p>1.Material Icon Theme</p><blockquote><p>个人正在用的图标主题，好看，类型大而全</p></blockquote><p><img src="https://images.weserv.nl/?url=https://jsd.liiiu.cn/gh/Aurorp1g/CDN/img/1fc0b91f_4.png" alt=""></p><p>2.vscode-icons</p><blockquote><p>也是一款不错的图标主题</p></blockquote><p><img src="https://images.weserv.nl/?url=https://jsd.liiiu.cn/gh/Aurorp1g/CDN/img/1fc0b91f_5.png" alt=""></p><h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><p>1.Vibrancy Continued</p><blockquote><p>使vscode背景高斯模糊，非常吃性能（慎用</p></blockquote><p>使用方法：按F1或者ctrl+shift+p，键入Reload Vibrancy，然后重启vscode</p><p>取消方法：按F1或者ctrl+shift+p，键入Disable Vibrancy，然后重启vscode</p><p><img src="https://images.weserv.nl/?url=https://jsd.liiiu.cn/gh/Aurorp1g/CDN/img/1fc0b91f_6.png" alt=""></p><p>2.background</p><blockquote><p>可以设置背景图片，非常好用</p></blockquote><p><img src="https://images.weserv.nl/?url=https://jsd.liiiu.cn/gh/Aurorp1g/CDN/img/1fc0b91f_0.png" alt=""></p><blockquote><p>需要在settings.json中修改成以下代码（file:///你自己背景图片的路径）</p></blockquote><p><img src="https://images.weserv.nl/?url=https://jsd.liiiu.cn/gh/Aurorp1g/CDN/img/1fc0b91f_code.png" alt=""></p><h3 id="基础功能类"><a href="#基础功能类" class="headerlink" title="基础功能类"></a>基础功能类</h3><p>1.Chinese (Simplified) (简体中文)</p><blockquote><p>【中文语言包】这应该不用多介绍，是vscode的官方中文语言包</p></blockquote><p><img src="https://images.weserv.nl/?url=https://jsd.liiiu.cn/gh/Aurorp1g/CDN/img/1fc0b91f_7.png" alt=""></p><p>2.Error Lens</p><blockquote><p>【错误提示】可以将原先显示的问题显示在对应行右侧并高亮</p></blockquote><p><img src="https://images.weserv.nl/?url=https://jsd.liiiu.cn/gh/Aurorp1g/CDN/img/1fc0b91f_8.png" alt=""></p><p>3.Path Intellisense</p><blockquote><p>【路径补全】在输入路径时，有智能提示补全</p></blockquote><p><img src="https://images.weserv.nl/?url=https://jsd.liiiu.cn/gh/Aurorp1g/CDN/img/1fc0b91f_9.png" alt=""></p><p>4.Image preview</p><blockquote><p>【图像预览】可以预览引入的图像</p></blockquote><p><img src="https://images.weserv.nl/?url=https://jsd.liiiu.cn/gh/Aurorp1g/CDN/img/1fc0b91f_10.png" alt=""></p><h3 id="拓展功能类"><a href="#拓展功能类" class="headerlink" title="拓展功能类"></a>拓展功能类</h3><p>1.CodeSnap</p><blockquote><p>【代码截图】一款非常好用的代码截图插件</p></blockquote><p><img src="https://images.weserv.nl/?url=https://jsd.liiiu.cn/gh/Aurorp1g/CDN/img/1fc0b91f_11.png" alt=""></p><p>2.Prettier - Code formatter</p><blockquote><p>【代码格式化工具】支持超多语言，一键格式化，美化代码格式</p></blockquote><p><img src="https://images.weserv.nl/?url=https://jsd.liiiu.cn/gh/Aurorp1g/CDN/img/1fc0b91f_12.png" alt=""></p><p>3.GBK to UTF8 for vscode</p><blockquote><p>【文件编码转化】可以将文件在GBK与UTF8编码之间无瑕转换</p></blockquote><p><img src="https://images.weserv.nl/?url=https://jsd.liiiu.cn/gh/Aurorp1g/CDN/img/1fc0b91f_13.png" alt=""></p><p>4.Hex Editor</p><blockquote><p>用来查看文件的hex或UTF-8编码</p></blockquote><p><img src="https://images.weserv.nl/?url=https://jsd.liiiu.cn/gh/Aurorp1g/CDN/img/1fc0b91f_14.png" alt=""></p><p>5.Doxygen Documentation Generator</p><blockquote><p>【文档生成器】写注释和文档时非常好用</p></blockquote><p><img src="https://images.weserv.nl/?url=https://jsd.liiiu.cn/gh/Aurorp1g/CDN/img/1fc0b91f_15.png" alt=""></p><p>6.Remote - SSH</p><blockquote><p>【ssh连接】连接远程服务器或虚拟机</p></blockquote><p><img src="https://images.weserv.nl/?url=https://jsd.liiiu.cn/gh/Aurorp1g/CDN/img/1fc0b91f_16.png" alt=""></p><p>7.Hungry Delete</p><blockquote><p>【像IDEA的退格键】删除整个空格或制表符块，并减少程序员按退格键所需的时间</p></blockquote><p><img src="https://images.weserv.nl/?url=https://jsd.liiiu.cn/gh/Aurorp1g/CDN/img/1fc0b91f_17.png" alt=""></p><h3 id="算法练习类"><a href="#算法练习类" class="headerlink" title="算法练习类"></a>算法练习类</h3><p>1.Code Runner</p><blockquote><p>【代码运行工具】支持多种语言，语言运行环境需自己配置</p></blockquote><p><img src="https://images.weserv.nl/?url=https://jsd.liiiu.cn/gh/Aurorp1g/CDN/img/1fc0b91f_18.png" alt=""></p><p>推荐修改配置：<br><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;code-runner.runInTerminal&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;code-runner.saveAllFilesBeforeRun&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;code-runner.saveFileBeforeRun&quot;</span><span class="punctuation">:</span> <span class="literal"><span class="keyword">true</span></span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure></p><p>2.Competitive Programming Helper (cph)</p><blockquote><p>刷算法题时很好用，可以自己设置样例，一键全部运行</p></blockquote><p><img src="https://images.weserv.nl/?url=https://jsd.liiiu.cn/gh/Aurorp1g/CDN/img/1fc0b91f_19.png" alt=""></p><h2 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h2><blockquote><p>以上是我个人的一些设置，大家可以根据自己的需要进行修改，同时也推荐大家安装一些插件，提高自己的开发效率。<br>最后，希望大家都能在vscode中找到自己的风格。</p></blockquote>]]></content>
       
       
       <categories>
@@ -833,9 +838,7 @@
       
         <tags>
             
-            <tag> Daily Life </tag>
-            
-            <tag> Study </tag>
+            <tag> 工具 </tag>
             
         </tags>
       
@@ -860,9 +863,9 @@
       
         <tags>
             
-            <tag> Study </tag>
+            <tag> 学习笔记 </tag>
             
-            <tag> PWN </tag>
+            <tag> 逆向 </tag>
             
         </tags>
       
@@ -880,16 +883,14 @@
       
       <categories>
           
-          <category> Coding </category>
+          <category> 编程开发 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Java </tag>
-            
-            <tag> Study </tag>
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -907,16 +908,14 @@
       
       <categories>
           
-          <category> Coding </category>
+          <category> 系统基础 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Study </tag>
-            
-            <tag> 汇编 </tag>
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -934,16 +933,14 @@
       
       <categories>
           
-          <category> Coding </category>
+          <category> 开发工具 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Study </tag>
-            
-            <tag> Markdown </tag>
+            <tag> 工具 </tag>
             
         </tags>
       
@@ -961,16 +958,14 @@
       
       <categories>
           
-          <category> 前后端开发 </category>
+          <category> 编程开发 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Study </tag>
-            
-            <tag> HTML </tag>
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -988,16 +983,14 @@
       
       <categories>
           
-          <category> Coding </category>
+          <category> 编程开发 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Java </tag>
-            
-            <tag> Study </tag>
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -1015,14 +1008,16 @@
       
       <categories>
           
-          <category> 琐记 </category>
+          <category> Crypto </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Daily Life </tag>
+            <tag> 密码学 </tag>
+            
+            <tag> 项目实战 </tag>
             
         </tags>
       
@@ -1040,14 +1035,16 @@
       
       <categories>
           
-          <category> 琐记 </category>
+          <category> 生活随笔 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Daily Life </tag>
+            <tag> 生活 </tag>
+            
+            <tag> 教程 </tag>
             
         </tags>
       
