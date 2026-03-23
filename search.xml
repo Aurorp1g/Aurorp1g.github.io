@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>一个广泛型系统性学习网站</title>
+      <link href="/posts/6efc654a.html"/>
+      <url>/posts/6efc654a.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="🧠-Systematic-Learning：一个广泛型系统性学习网站"><a href="#🧠-Systematic-Learning：一个广泛型系统性学习网站" class="headerlink" title="🧠 Systematic Learning：一个广泛型系统性学习网站"></a>🧠 Systematic Learning：一个广泛型系统性学习网站</h1><p>大家好！今天我想向大家介绍我开发的一个知识库网站——<strong>Systematic Learning</strong>。</p><h2 id="📚-网站简介"><a href="#📚-网站简介" class="headerlink" title="📚 网站简介"></a>📚 网站简介</h2><p><strong>Systematic Learning</strong> 是一个基于 Sphinx 构建的综合性学习知识库，致力于为学习者提供系统化、结构化的知识整理与导航。</p><p>🔗 <strong>在线访问</strong>: <a href="https://aurorp1g.github.io/Systematic-Learning/index.html">https://aurorp1g.github.io/Systematic-Learning/index.html</a></p><p>📂 <strong>项目源码</strong>: <a href="https://github.com/Aurorp1g/Systematic-Learning">https://github.com/Aurorp1g/Systematic-Learning</a></p><h2 id="✨-主要特点"><a href="#✨-主要特点" class="headerlink" title="✨ 主要特点"></a>✨ 主要特点</h2><h3 id="1-知识覆盖面广"><a href="#1-知识覆盖面广" class="headerlink" title="1. 知识覆盖面广"></a>1. 知识覆盖面广</h3><p>网站涵盖了多个领域的系统知识：</p><ul><li><strong>计算机科学</strong>：编译原理、计算机网络、数据结构与算法、数据库原理、操作系统</li><li><strong>编程语言</strong>：Python 入门到进阶（解释器、语法、数据类型、函数、面向对象、模块等）</li><li><strong>Linux 工具</strong>：GDB 调试、性能优化、进程管理、网络工具</li><li><strong>数学</strong>：线性代数、微积分、概率统计、离散数学、数值分析</li><li><strong>物理</strong>：力学、热力学、量子力学、电磁学</li></ul><h3 id="2-技术栈专业"><a href="#2-技术栈专业" class="headerlink" title="2. 技术栈专业"></a>2. 技术栈专业</h3><ul><li><strong>文档生成</strong>：Sphinx + MyST Parser</li><li><strong>主题</strong>：Furo（现代化响应式主题）</li><li><strong>格式</strong>：reStructuredText + Markdown</li><li><strong>部署</strong>：GitHub Pages 一键托管</li></ul><h3 id="3-开源免费"><a href="#3-开源免费" class="headerlink" title="3. 开源免费"></a>3. 开源免费</h3><p>完全开源，你可以：</p><ul><li>免费阅读所有内容</li><li>Fork 项目学习 Sphinx 使用</li><li>提交 Pull Request 贡献内容</li><li>本地部署自建知识库</li></ul><h2 id="🚀-技术亮点"><a href="#🚀-技术亮点" class="headerlink" title="🚀 技术亮点"></a>🚀 技术亮点</h2><p>对于想要搭建类似知识库的朋友，这里分享一下技术实现：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Sphinx 配置文件核心设置</span></span><br><span class="line">extensions = [<span class="string">&#x27;sphinx.ext.intersphinx&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;sphinx.ext.todo&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;sphinx.ext.coverage&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;sphinx.ext.mathjax&#x27;</span>,</span><br><span class="line">    <span class="string">&#x27;myst_parser&#x27;</span>]</span><br><span class="line"></span><br><span class="line">html_theme = <span class="string">&quot;furo&quot;</span></span><br><span class="line">source_suffix = [<span class="string">&#x27;.rst&#x27;</span>, <span class="string">&#x27;.md&#x27;</span>]</span><br></pre></td></tr></table></figure><h2 id="📱-界面预览"><a href="#📱-界面预览" class="headerlink" title="📱 界面预览"></a>📱 界面预览</h2><p>网站采用现代化 Furo 主题，支持：</p><ul><li>响应式布局（适配手机/平板/桌面）</li><li>侧边栏目录导航</li><li>黑暗/亮色模式切换</li><li>代码高亮与复制</li><li>搜索功能</li></ul><h2 id="🤝-欢迎参与"><a href="#🤝-欢迎参与" class="headerlink" title="🤝 欢迎参与"></a>🤝 欢迎参与</h2><p>如果你对某个领域有深入了解，欢迎提交贡献！无论是修正错别字、补充内容，还是添加新的知识章节，都非常欢迎。</p><p>让我们一起构建一个终身学习的知识宝库！</p><hr><p><em>持续学习，持续成长。</em></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 编程开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 项目实战 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>NSIS打包保姆级教程（含后台服务注册）</title>
       <link href="/posts/64378c92.html"/>
       <url>/posts/64378c92.html</url>
