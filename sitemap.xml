@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://aurorp1g.github.io/update/index.html</loc>
+    
+    <lastmod>2026-04-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://aurorp1g.github.io/posts/cc9c5281.html</loc>
     
     <lastmod>2026-04-23</lastmod>
@@ -419,15 +428,6 @@
     <loc>https://aurorp1g.github.io/personal/about/index.html</loc>
     
     <lastmod>2026-01-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://aurorp1g.github.io/update/index.html</loc>
-    
-    <lastmod>2026-01-16</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
