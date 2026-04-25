@@ -4,7 +4,7 @@
   <url>
     <loc>https://aurorp1g.github.io/update/index.html</loc>
     
-    <lastmod>2026-04-24</lastmod>
+    <lastmod>2026-04-25</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -637,13 +637,6 @@
   </url>
   
   <url>
-    <loc>https://aurorp1g.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2026-04-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://aurorp1g.github.io/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -652,6 +645,13 @@
   
   <url>
     <loc>https://aurorp1g.github.io/tags/%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98/</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://aurorp1g.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -709,14 +709,14 @@
   </url>
   
   <url>
-    <loc>https://aurorp1g.github.io/categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/</loc>
+    <loc>https://aurorp1g.github.io/categories/Crypto/</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://aurorp1g.github.io/categories/Crypto/</loc>
+    <loc>https://aurorp1g.github.io/categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
