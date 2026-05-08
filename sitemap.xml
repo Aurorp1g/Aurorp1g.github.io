@@ -2,25 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://aurorp1g.github.io/posts/1b7675c2.html</loc>
-    
-    <lastmod>2026-05-08</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://aurorp1g.github.io/posts/2a3de4c7.html</loc>
-    
-    <lastmod>2026-05-08</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://aurorp1g.github.io/posts/4e95fd80.html</loc>
+    <loc>https://aurorp1g.github.io/posts/7663191d.html</loc>
     
     <lastmod>2026-05-08</lastmod>
     
@@ -38,7 +20,34 @@
   </url>
   
   <url>
-    <loc>https://aurorp1g.github.io/posts/7663191d.html</loc>
+    <loc>https://aurorp1g.github.io/posts/5b8c3f2d.html</loc>
+    
+    <lastmod>2026-05-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://aurorp1g.github.io/posts/2a3de4c7.html</loc>
+    
+    <lastmod>2026-05-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://aurorp1g.github.io/posts/1b7675c2.html</loc>
+    
+    <lastmod>2026-05-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://aurorp1g.github.io/posts/4e95fd80.html</loc>
     
     <lastmod>2026-05-08</lastmod>
     
@@ -728,6 +737,13 @@
   
   <url>
     <loc>https://aurorp1g.github.io/tags/WAF/</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://aurorp1g.github.io/tags/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/</loc>
     <lastmod>2026-05-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
