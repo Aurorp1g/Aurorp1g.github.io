@@ -1,6 +1,6 @@
 ## 🌌My Blog
  
- ![](/img/wallhaven.png)
+ ![](/img/wallhaven.jpeg)
  
  ### 📝 简介 | About
  
