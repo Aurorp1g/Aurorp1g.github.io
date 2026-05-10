@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://aurorp1g.github.io/posts/8d4b7ae1.html</loc>
+    <loc>https://aurorp1g.github.io/personal/about/index.html</loc>
     
     <lastmod>2026-05-10</lastmod>
     
@@ -11,9 +11,9 @@
   </url>
   
   <url>
-    <loc>https://aurorp1g.github.io/personal/about/index.html</loc>
+    <loc>https://aurorp1g.github.io/posts/8d4b7ae1.html</loc>
     
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-05-10</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -74,7 +74,7 @@
   </url>
   
   <url>
-    <loc>https://aurorp1g.github.io/posts/2a3de4c7.html</loc>
+    <loc>https://aurorp1g.github.io/posts/46a63057.html</loc>
     
     <lastmod>2026-05-08</lastmod>
     
@@ -83,7 +83,7 @@
   </url>
   
   <url>
-    <loc>https://aurorp1g.github.io/posts/46a63057.html</loc>
+    <loc>https://aurorp1g.github.io/posts/2a3de4c7.html</loc>
     
     <lastmod>2026-05-08</lastmod>
     
@@ -768,14 +768,14 @@
   </url>
   
   <url>
-    <loc>https://aurorp1g.github.io/tags/XSS/</loc>
+    <loc>https://aurorp1g.github.io/tags/WAF/</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://aurorp1g.github.io/tags/WAF/</loc>
+    <loc>https://aurorp1g.github.io/tags/XSS/</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
