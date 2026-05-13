@@ -3,11 +3,11 @@
   <title>Aurorp1g Blog</title>
   
   <subtitle>Aurorp1g&#39;s Blog</subtitle>
-  <link href="https://aurorp1g.github.io/atom.xml" rel="self"/>
+  <link href="https://aurorp1g.bbroot.com/atom.xml" rel="self"/>
   
-  <link href="https://aurorp1g.github.io/"/>
+  <link href="https://aurorp1g.bbroot.com/"/>
   <updated>2026-05-12T14:14:24.644Z</updated>
-  <id>https://aurorp1g.github.io/</id>
+  <id>https://aurorp1g.bbroot.com/</id>
   
   <author>
     <name>Aurorp1g</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>魔方中的数学原理：群论、置换与高维立方体的严格数学刻画</title>
-    <link href="https://aurorp1g.github.io/posts/a19503b8.html"/>
-    <id>https://aurorp1g.github.io/posts/a19503b8.html</id>
+    <link href="https://aurorp1g.bbroot.com/posts/a19503b8.html"/>
+    <id>https://aurorp1g.bbroot.com/posts/a19503b8.html</id>
     <published>2026-05-10T16:11:18.000Z</published>
     <updated>2026-05-12T14:14:24.644Z</updated>
     
@@ -30,19 +30,19 @@
     
     
     
-    <category term="数学探索" scheme="https://aurorp1g.github.io/categories/%E6%95%B0%E5%AD%A6%E6%8E%A2%E7%B4%A2/"/>
+    <category term="数学探索" scheme="https://aurorp1g.bbroot.com/categories/%E6%95%B0%E5%AD%A6%E6%8E%A2%E7%B4%A2/"/>
     
     
-    <category term="高维几何" scheme="https://aurorp1g.github.io/tags/%E9%AB%98%E7%BB%B4%E5%87%A0%E4%BD%95/"/>
+    <category term="高维几何" scheme="https://aurorp1g.bbroot.com/tags/%E9%AB%98%E7%BB%B4%E5%87%A0%E4%BD%95/"/>
     
-    <category term="群论" scheme="https://aurorp1g.github.io/tags/%E7%BE%A4%E8%AE%BA/"/>
+    <category term="群论" scheme="https://aurorp1g.bbroot.com/tags/%E7%BE%A4%E8%AE%BA/"/>
     
   </entry>
   
   <entry>
     <title>PHP反序列化漏洞：从原理到实战</title>
-    <link href="https://aurorp1g.github.io/posts/2a3de4c7.html"/>
-    <id>https://aurorp1g.github.io/posts/2a3de4c7.html</id>
+    <link href="https://aurorp1g.bbroot.com/posts/2a3de4c7.html"/>
+    <id>https://aurorp1g.bbroot.com/posts/2a3de4c7.html</id>
     <published>2026-05-08T17:27:47.000Z</published>
     <updated>2026-05-08T18:27:16.553Z</updated>
     
@@ -59,19 +59,19 @@
     
     
     
-    <category term="网络安全" scheme="https://aurorp1g.github.io/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
+    <category term="网络安全" scheme="https://aurorp1g.bbroot.com/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
     
     
-    <category term="学习笔记" scheme="https://aurorp1g.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <category term="学习笔记" scheme="https://aurorp1g.bbroot.com/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
-    <category term="Web安全" scheme="https://aurorp1g.github.io/tags/Web%E5%AE%89%E5%85%A8/"/>
+    <category term="Web安全" scheme="https://aurorp1g.bbroot.com/tags/Web%E5%AE%89%E5%85%A8/"/>
     
   </entry>
   
   <entry>
     <title>WAF基本原理与部署方式</title>
-    <link href="https://aurorp1g.github.io/posts/46a63057.html"/>
-    <id>https://aurorp1g.github.io/posts/46a63057.html</id>
+    <link href="https://aurorp1g.bbroot.com/posts/46a63057.html"/>
+    <id>https://aurorp1g.bbroot.com/posts/46a63057.html</id>
     <published>2026-05-08T14:51:31.000Z</published>
     <updated>2026-05-08T18:27:16.553Z</updated>
     
@@ -88,19 +88,19 @@
     
     
     
-    <category term="网络安全" scheme="https://aurorp1g.github.io/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
+    <category term="网络安全" scheme="https://aurorp1g.bbroot.com/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
     
     
-    <category term="Web安全" scheme="https://aurorp1g.github.io/tags/Web%E5%AE%89%E5%85%A8/"/>
+    <category term="Web安全" scheme="https://aurorp1g.bbroot.com/tags/Web%E5%AE%89%E5%85%A8/"/>
     
-    <category term="WAF" scheme="https://aurorp1g.github.io/tags/WAF/"/>
+    <category term="WAF" scheme="https://aurorp1g.bbroot.com/tags/WAF/"/>
     
   </entry>
   
   <entry>
     <title>XSS(跨站脚本攻击)完全指南</title>
-    <link href="https://aurorp1g.github.io/posts/c86043aa.html"/>
-    <id>https://aurorp1g.github.io/posts/c86043aa.html</id>
+    <link href="https://aurorp1g.bbroot.com/posts/c86043aa.html"/>
+    <id>https://aurorp1g.bbroot.com/posts/c86043aa.html</id>
     <published>2026-05-05T05:53:36.000Z</published>
     <updated>2026-05-09T06:25:35.412Z</updated>
     
@@ -117,19 +117,19 @@
     
     
     
-    <category term="网络安全" scheme="https://aurorp1g.github.io/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
+    <category term="网络安全" scheme="https://aurorp1g.bbroot.com/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
     
     
-    <category term="Web安全" scheme="https://aurorp1g.github.io/tags/Web%E5%AE%89%E5%85%A8/"/>
+    <category term="Web安全" scheme="https://aurorp1g.bbroot.com/tags/Web%E5%AE%89%E5%85%A8/"/>
     
-    <category term="XSS" scheme="https://aurorp1g.github.io/tags/XSS/"/>
+    <category term="XSS" scheme="https://aurorp1g.bbroot.com/tags/XSS/"/>
     
   </entry>
   
   <entry>
     <title>SQL注入</title>
-    <link href="https://aurorp1g.github.io/posts/e73517db.html"/>
-    <id>https://aurorp1g.github.io/posts/e73517db.html</id>
+    <link href="https://aurorp1g.bbroot.com/posts/e73517db.html"/>
+    <id>https://aurorp1g.bbroot.com/posts/e73517db.html</id>
     <published>2026-05-05T03:21:47.000Z</published>
     <updated>2026-05-09T06:48:54.255Z</updated>
     
@@ -146,19 +146,19 @@
     
     
     
-    <category term="网络安全" scheme="https://aurorp1g.github.io/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
+    <category term="网络安全" scheme="https://aurorp1g.bbroot.com/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
     
     
-    <category term="Web安全" scheme="https://aurorp1g.github.io/tags/Web%E5%AE%89%E5%85%A8/"/>
+    <category term="Web安全" scheme="https://aurorp1g.bbroot.com/tags/Web%E5%AE%89%E5%85%A8/"/>
     
-    <category term="SQL注入" scheme="https://aurorp1g.github.io/tags/SQL%E6%B3%A8%E5%85%A5/"/>
+    <category term="SQL注入" scheme="https://aurorp1g.bbroot.com/tags/SQL%E6%B3%A8%E5%85%A5/"/>
     
   </entry>
   
   <entry>
     <title>HTTP协议与Web安全漏洞</title>
-    <link href="https://aurorp1g.github.io/posts/5b8c3f2d.html"/>
-    <id>https://aurorp1g.github.io/posts/5b8c3f2d.html</id>
+    <link href="https://aurorp1g.bbroot.com/posts/5b8c3f2d.html"/>
+    <id>https://aurorp1g.bbroot.com/posts/5b8c3f2d.html</id>
     <published>2026-05-01T18:18:50.000Z</published>
     <updated>2026-05-12T14:11:14.257Z</updated>
     
@@ -169,19 +169,19 @@
     
     
     
-    <category term="网络安全" scheme="https://aurorp1g.github.io/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
+    <category term="网络安全" scheme="https://aurorp1g.bbroot.com/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
     
     
-    <category term="Web安全" scheme="https://aurorp1g.github.io/tags/Web%E5%AE%89%E5%85%A8/"/>
+    <category term="Web安全" scheme="https://aurorp1g.bbroot.com/tags/Web%E5%AE%89%E5%85%A8/"/>
     
-    <category term="网络协议" scheme="https://aurorp1g.github.io/tags/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/"/>
+    <category term="网络协议" scheme="https://aurorp1g.bbroot.com/tags/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/"/>
     
   </entry>
   
   <entry>
     <title>Docker底层原理</title>
-    <link href="https://aurorp1g.github.io/posts/7663191d.html"/>
-    <id>https://aurorp1g.github.io/posts/7663191d.html</id>
+    <link href="https://aurorp1g.bbroot.com/posts/7663191d.html"/>
+    <id>https://aurorp1g.bbroot.com/posts/7663191d.html</id>
     <published>2026-04-30T11:00:16.000Z</published>
     <updated>2026-05-08T18:27:16.553Z</updated>
     
@@ -199,19 +199,19 @@
     
     
     
-    <category term="开发工具" scheme="https://aurorp1g.github.io/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    <category term="开发工具" scheme="https://aurorp1g.bbroot.com/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
     
     
-    <category term="工具" scheme="https://aurorp1g.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
+    <category term="工具" scheme="https://aurorp1g.bbroot.com/tags/%E5%B7%A5%E5%85%B7/"/>
     
-    <category term="虚拟化" scheme="https://aurorp1g.github.io/tags/%E8%99%9A%E6%8B%9F%E5%8C%96/"/>
+    <category term="虚拟化" scheme="https://aurorp1g.bbroot.com/tags/%E8%99%9A%E6%8B%9F%E5%8C%96/"/>
     
   </entry>
   
   <entry>
     <title>黎曼几何从基础到应用——度量、曲率、拓扑与物理</title>
-    <link href="https://aurorp1g.github.io/posts/96582cdf.html"/>
-    <id>https://aurorp1g.github.io/posts/96582cdf.html</id>
+    <link href="https://aurorp1g.bbroot.com/posts/96582cdf.html"/>
+    <id>https://aurorp1g.bbroot.com/posts/96582cdf.html</id>
     <published>2026-04-11T14:24:21.000Z</published>
     <updated>2026-05-13T08:46:35.492Z</updated>
     
@@ -222,19 +222,19 @@
     
     
     
-    <category term="数学探索" scheme="https://aurorp1g.github.io/categories/%E6%95%B0%E5%AD%A6%E6%8E%A2%E7%B4%A2/"/>
+    <category term="数学探索" scheme="https://aurorp1g.bbroot.com/categories/%E6%95%B0%E5%AD%A6%E6%8E%A2%E7%B4%A2/"/>
     
     
-    <category term="黎曼几何" scheme="https://aurorp1g.github.io/tags/%E9%BB%8E%E6%9B%BC%E5%87%A0%E4%BD%95/"/>
+    <category term="黎曼几何" scheme="https://aurorp1g.bbroot.com/tags/%E9%BB%8E%E6%9B%BC%E5%87%A0%E4%BD%95/"/>
     
-    <category term="高维几何" scheme="https://aurorp1g.github.io/tags/%E9%AB%98%E7%BB%B4%E5%87%A0%E4%BD%95/"/>
+    <category term="高维几何" scheme="https://aurorp1g.bbroot.com/tags/%E9%AB%98%E7%BB%B4%E5%87%A0%E4%BD%95/"/>
     
   </entry>
   
   <entry>
     <title>一个广泛型系统性学习网站</title>
-    <link href="https://aurorp1g.github.io/posts/6efc654a.html"/>
-    <id>https://aurorp1g.github.io/posts/6efc654a.html</id>
+    <link href="https://aurorp1g.bbroot.com/posts/6efc654a.html"/>
+    <id>https://aurorp1g.bbroot.com/posts/6efc654a.html</id>
     <published>2026-03-23T08:34:49.000Z</published>
     <updated>2026-05-09T06:43:42.621Z</updated>
     
@@ -245,17 +245,17 @@
     
     
     
-    <category term="编程开发" scheme="https://aurorp1g.github.io/categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/"/>
+    <category term="编程开发" scheme="https://aurorp1g.bbroot.com/categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/"/>
     
     
-    <category term="项目实战" scheme="https://aurorp1g.github.io/tags/%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98/"/>
+    <category term="项目实战" scheme="https://aurorp1g.bbroot.com/tags/%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98/"/>
     
   </entry>
   
   <entry>
     <title>NSIS打包保姆级教程（含后台服务注册）</title>
-    <link href="https://aurorp1g.github.io/posts/64378c92.html"/>
-    <id>https://aurorp1g.github.io/posts/64378c92.html</id>
+    <link href="https://aurorp1g.bbroot.com/posts/64378c92.html"/>
+    <id>https://aurorp1g.bbroot.com/posts/64378c92.html</id>
     <published>2026-03-19T10:45:31.000Z</published>
     <updated>2026-05-11T03:33:34.006Z</updated>
     
@@ -272,19 +272,19 @@
     
     
     
-    <category term="开发工具" scheme="https://aurorp1g.github.io/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    <category term="开发工具" scheme="https://aurorp1g.bbroot.com/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
     
     
-    <category term="教程" scheme="https://aurorp1g.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    <category term="教程" scheme="https://aurorp1g.bbroot.com/tags/%E6%95%99%E7%A8%8B/"/>
     
-    <category term="工具" scheme="https://aurorp1g.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
+    <category term="工具" scheme="https://aurorp1g.bbroot.com/tags/%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   
   <entry>
     <title>Auto Connect - 校园网自动连接桌面应用</title>
-    <link href="https://aurorp1g.github.io/posts/90b759bc.html"/>
-    <id>https://aurorp1g.github.io/posts/90b759bc.html</id>
+    <link href="https://aurorp1g.bbroot.com/posts/90b759bc.html"/>
+    <id>https://aurorp1g.bbroot.com/posts/90b759bc.html</id>
     <published>2026-03-13T00:55:10.000Z</published>
     <updated>2026-03-19T11:32:20.545Z</updated>
     
@@ -301,17 +301,17 @@
     
     
     
-    <category term="编程开发" scheme="https://aurorp1g.github.io/categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/"/>
+    <category term="编程开发" scheme="https://aurorp1g.bbroot.com/categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/"/>
     
     
-    <category term="项目实战" scheme="https://aurorp1g.github.io/tags/%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98/"/>
+    <category term="项目实战" scheme="https://aurorp1g.bbroot.com/tags/%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98/"/>
     
   </entry>
   
   <entry>
     <title>一份给开源新手的 GitHub 贡献流程指南</title>
-    <link href="https://aurorp1g.github.io/posts/d46f7b89.html"/>
-    <id>https://aurorp1g.github.io/posts/d46f7b89.html</id>
+    <link href="https://aurorp1g.bbroot.com/posts/d46f7b89.html"/>
+    <id>https://aurorp1g.bbroot.com/posts/d46f7b89.html</id>
     <published>2026-02-19T07:35:30.000Z</published>
     <updated>2026-05-09T06:43:42.431Z</updated>
     
@@ -322,17 +322,17 @@
     
     
     
-    <category term="开发工具" scheme="https://aurorp1g.github.io/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    <category term="开发工具" scheme="https://aurorp1g.bbroot.com/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
     
     
-    <category term="教程" scheme="https://aurorp1g.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    <category term="教程" scheme="https://aurorp1g.bbroot.com/tags/%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
   <entry>
     <title>2026寒假计划</title>
-    <link href="https://aurorp1g.github.io/posts/ec49fbc9.html"/>
-    <id>https://aurorp1g.github.io/posts/ec49fbc9.html</id>
+    <link href="https://aurorp1g.bbroot.com/posts/ec49fbc9.html"/>
+    <id>https://aurorp1g.bbroot.com/posts/ec49fbc9.html</id>
     <published>2026-01-14T16:00:00.000Z</published>
     <updated>2026-03-19T11:32:20.267Z</updated>
     
@@ -343,17 +343,17 @@
     
     
     
-    <category term="生活随笔" scheme="https://aurorp1g.github.io/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
+    <category term="生活随笔" scheme="https://aurorp1g.bbroot.com/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
     
     
-    <category term="生活" scheme="https://aurorp1g.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
+    <category term="生活" scheme="https://aurorp1g.bbroot.com/tags/%E7%94%9F%E6%B4%BB/"/>
     
   </entry>
   
   <entry>
     <title>Yus Cipher - 全同态加密友好的流密码项目开发总结</title>
-    <link href="https://aurorp1g.github.io/posts/2c8d9e3f.html"/>
-    <id>https://aurorp1g.github.io/posts/2c8d9e3f.html</id>
+    <link href="https://aurorp1g.bbroot.com/posts/2c8d9e3f.html"/>
+    <id>https://aurorp1g.bbroot.com/posts/2c8d9e3f.html</id>
     <published>2025-12-15T06:30:00.000Z</published>
     <updated>2026-03-19T11:32:20.109Z</updated>
     
@@ -364,17 +364,17 @@
     
     
     
-    <category term="Crypto" scheme="https://aurorp1g.github.io/categories/Crypto/"/>
+    <category term="Crypto" scheme="https://aurorp1g.bbroot.com/categories/Crypto/"/>
     
     
-    <category term="项目实战" scheme="https://aurorp1g.github.io/tags/%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98/"/>
+    <category term="项目实战" scheme="https://aurorp1g.bbroot.com/tags/%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98/"/>
     
   </entry>
   
   <entry>
     <title>生日祝福静态网站生成框架</title>
-    <link href="https://aurorp1g.github.io/posts/ff5467f1.html"/>
-    <id>https://aurorp1g.github.io/posts/ff5467f1.html</id>
+    <link href="https://aurorp1g.bbroot.com/posts/ff5467f1.html"/>
+    <id>https://aurorp1g.bbroot.com/posts/ff5467f1.html</id>
     <published>2025-11-26T15:02:48.000Z</published>
     <updated>2026-03-19T11:32:19.963Z</updated>
     
@@ -391,17 +391,17 @@
     
     
     
-    <category term="编程开发" scheme="https://aurorp1g.github.io/categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/"/>
+    <category term="编程开发" scheme="https://aurorp1g.bbroot.com/categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/"/>
     
     
-    <category term="项目实战" scheme="https://aurorp1g.github.io/tags/%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98/"/>
+    <category term="项目实战" scheme="https://aurorp1g.bbroot.com/tags/%E9%A1%B9%E7%9B%AE%E5%AE%9E%E6%88%98/"/>
     
   </entry>
   
   <entry>
     <title>指令集体系结构学习笔记</title>
-    <link href="https://aurorp1g.github.io/posts/3a102641.html"/>
-    <id>https://aurorp1g.github.io/posts/3a102641.html</id>
+    <link href="https://aurorp1g.bbroot.com/posts/3a102641.html"/>
+    <id>https://aurorp1g.bbroot.com/posts/3a102641.html</id>
     <published>2025-11-01T04:40:48.000Z</published>
     <updated>2026-03-19T11:32:19.787Z</updated>
     
@@ -418,17 +418,17 @@
     
     
     
-    <category term="系统基础" scheme="https://aurorp1g.github.io/categories/%E7%B3%BB%E7%BB%9F%E5%9F%BA%E7%A1%80/"/>
+    <category term="系统基础" scheme="https://aurorp1g.bbroot.com/categories/%E7%B3%BB%E7%BB%9F%E5%9F%BA%E7%A1%80/"/>
     
     
-    <category term="学习笔记" scheme="https://aurorp1g.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <category term="学习笔记" scheme="https://aurorp1g.bbroot.com/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
   <entry>
     <title>Multisim使用教程详尽版</title>
-    <link href="https://aurorp1g.github.io/posts/3e7af074.html"/>
-    <id>https://aurorp1g.github.io/posts/3e7af074.html</id>
+    <link href="https://aurorp1g.bbroot.com/posts/3e7af074.html"/>
+    <id>https://aurorp1g.bbroot.com/posts/3e7af074.html</id>
     <published>2025-10-26T10:09:12.000Z</published>
     <updated>2026-03-19T11:32:19.583Z</updated>
     
@@ -445,17 +445,17 @@
     
     
     
-    <category term="开发工具" scheme="https://aurorp1g.github.io/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    <category term="开发工具" scheme="https://aurorp1g.bbroot.com/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
     
     
-    <category term="工具" scheme="https://aurorp1g.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
+    <category term="工具" scheme="https://aurorp1g.bbroot.com/tags/%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   
   <entry>
     <title>实验室Crypto招新题WriteUp</title>
-    <link href="https://aurorp1g.github.io/posts/7a353d25.html"/>
-    <id>https://aurorp1g.github.io/posts/7a353d25.html</id>
+    <link href="https://aurorp1g.bbroot.com/posts/7a353d25.html"/>
+    <id>https://aurorp1g.bbroot.com/posts/7a353d25.html</id>
     <published>2025-10-15T02:12:19.000Z</published>
     <updated>2026-03-19T09:12:35.160Z</updated>
     
@@ -472,21 +472,21 @@
     
     
     
-    <category term="Crypto" scheme="https://aurorp1g.github.io/categories/Crypto/"/>
+    <category term="Crypto" scheme="https://aurorp1g.bbroot.com/categories/Crypto/"/>
     
     
-    <category term="密码学" scheme="https://aurorp1g.github.io/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/"/>
+    <category term="密码学" scheme="https://aurorp1g.bbroot.com/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/"/>
     
-    <category term="CTF" scheme="https://aurorp1g.github.io/tags/CTF/"/>
+    <category term="CTF" scheme="https://aurorp1g.bbroot.com/tags/CTF/"/>
     
-    <category term="WriteUp" scheme="https://aurorp1g.github.io/tags/WriteUp/"/>
+    <category term="WriteUp" scheme="https://aurorp1g.bbroot.com/tags/WriteUp/"/>
     
   </entry>
   
   <entry>
     <title>启沅杯&quot;2025年佛山市工业互联网安全技能竞赛（初赛）-夺旗赛&quot; WriteUp</title>
-    <link href="https://aurorp1g.github.io/posts/d3e10f3d.html"/>
-    <id>https://aurorp1g.github.io/posts/d3e10f3d.html</id>
+    <link href="https://aurorp1g.bbroot.com/posts/d3e10f3d.html"/>
+    <id>https://aurorp1g.bbroot.com/posts/d3e10f3d.html</id>
     <published>2025-09-15T16:57:01.000Z</published>
     <updated>2026-05-08T14:59:22.324Z</updated>
     
@@ -504,21 +504,21 @@
     
     
     
-    <category term="网络安全" scheme="https://aurorp1g.github.io/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
+    <category term="网络安全" scheme="https://aurorp1g.bbroot.com/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
     
     
-    <category term="竞赛" scheme="https://aurorp1g.github.io/tags/%E7%AB%9E%E8%B5%9B/"/>
+    <category term="竞赛" scheme="https://aurorp1g.bbroot.com/tags/%E7%AB%9E%E8%B5%9B/"/>
     
-    <category term="CTF" scheme="https://aurorp1g.github.io/tags/CTF/"/>
+    <category term="CTF" scheme="https://aurorp1g.bbroot.com/tags/CTF/"/>
     
-    <category term="WriteUp" scheme="https://aurorp1g.github.io/tags/WriteUp/"/>
+    <category term="WriteUp" scheme="https://aurorp1g.bbroot.com/tags/WriteUp/"/>
     
   </entry>
   
   <entry>
     <title>CTF中常见的RSA加密</title>
-    <link href="https://aurorp1g.github.io/posts/d9b2356c.html"/>
-    <id>https://aurorp1g.github.io/posts/d9b2356c.html</id>
+    <link href="https://aurorp1g.bbroot.com/posts/d9b2356c.html"/>
+    <id>https://aurorp1g.bbroot.com/posts/d9b2356c.html</id>
     <published>2025-09-15T10:37:30.000Z</published>
     <updated>2026-03-19T11:32:19.367Z</updated>
     
@@ -535,12 +535,12 @@
     
     
     
-    <category term="Crypto" scheme="https://aurorp1g.github.io/categories/Crypto/"/>
+    <category term="Crypto" scheme="https://aurorp1g.bbroot.com/categories/Crypto/"/>
     
     
-    <category term="密码学" scheme="https://aurorp1g.github.io/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/"/>
+    <category term="密码学" scheme="https://aurorp1g.bbroot.com/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/"/>
     
-    <category term="学习笔记" scheme="https://aurorp1g.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <category term="学习笔记" scheme="https://aurorp1g.bbroot.com/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
