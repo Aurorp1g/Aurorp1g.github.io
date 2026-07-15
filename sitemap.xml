@@ -783,14 +783,7 @@
   </url>
   
   <url>
-    <loc>https://aurorp1g.github.io/tags/%E9%BB%8E%E6%9B%BC%E5%87%A0%E4%BD%95/</loc>
-    <lastmod>2026-07-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://aurorp1g.github.io/tags/%E9%AB%98%E7%BB%B4%E5%87%A0%E4%BD%95/</loc>
+    <loc>https://aurorp1g.github.io/tags/SQL%E6%B3%A8%E5%85%A5/</loc>
     <lastmod>2026-07-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -804,7 +797,14 @@
   </url>
   
   <url>
-    <loc>https://aurorp1g.github.io/tags/SQL%E6%B3%A8%E5%85%A5/</loc>
+    <loc>https://aurorp1g.github.io/tags/%E9%BB%8E%E6%9B%BC%E5%87%A0%E4%BD%95/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://aurorp1g.github.io/tags/%E9%AB%98%E7%BB%B4%E5%87%A0%E4%BD%95/</loc>
     <lastmod>2026-07-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -832,6 +832,13 @@
   </url>
   
   <url>
+    <loc>https://aurorp1g.github.io/tags/%E7%BE%A4%E8%AE%BA/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://aurorp1g.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/</loc>
     <lastmod>2026-07-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -840,13 +847,6 @@
   
   <url>
     <loc>https://aurorp1g.github.io/tags/%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B/</loc>
-    <lastmod>2026-07-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://aurorp1g.github.io/tags/%E7%BE%A4%E8%AE%BA/</loc>
     <lastmod>2026-07-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -876,14 +876,14 @@
   </url>
   
   <url>
-    <loc>https://aurorp1g.github.io/categories/%E7%B3%BB%E7%BB%9F%E5%9F%BA%E7%A1%80/</loc>
+    <loc>https://aurorp1g.github.io/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2026-07-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://aurorp1g.github.io/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/</loc>
+    <loc>https://aurorp1g.github.io/categories/%E7%B3%BB%E7%BB%9F%E5%9F%BA%E7%A1%80/</loc>
     <lastmod>2026-07-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
